@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=1280">
 <title>김럭스 블로그 1회차 보고</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css">
 <style>
@@ -11,12 +11,12 @@
 :root[data-theme="dark"]{--bg:#171614;--card:#211f1c;--ink:#efebe4;--sub:#a8a197;--line:#35322d;--acc:#d2ad69;--acc-soft:#2e2819;--blue:#7fa8d1;--green:#79b892;--rose:#d98c84;--violet:#a891d6}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;line-height:1.65;word-break:keep-all}
-.wrap{max-width:880px;margin:0 auto;padding:40px 16px 80px}
+.wrap{max-width:1240px;margin:0 auto;padding:56px 40px 100px}
 header .eyebrow{font-size:13px;color:var(--acc);font-weight:700;letter-spacing:.04em}
-header h1{font-size:30px;line-height:1.3;margin:6px 0 10px}
+header h1{font-size:36px;line-height:1.3;margin:6px 0 10px}
 header p{color:var(--sub);margin:0}
 section{margin-top:56px}
-h2{font-size:22px;margin:0 0 6px}
+h2{font-size:26px;margin:0 0 6px}
 h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-top:4px}
 .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px;counter-reset:s}
 .step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px;position:relative}
@@ -38,9 +38,9 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 .post{background:var(--card);border:1px solid var(--line);border-radius:18px;max-width:640px;margin:0 auto;overflow:hidden}
 .post .bar-top{display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:1px solid var(--line);font-size:13px;color:var(--sub)}
 .post .bar-top i{width:26px;height:26px;border-radius:50%;background:var(--acc);display:inline-block}
-.post article{padding:26px 22px 30px}
-.post h3{font-size:22px;line-height:1.4;margin:0 0 22px}
-.post p{margin:0 0 20px;font-size:16px}
+.post article{padding:40px 48px 44px}
+.post h3{font-size:26px;line-height:1.4;margin:0 0 26px}
+.post p{margin:0 0 22px;font-size:17px;line-height:1.8}
 .post .hook{text-align:center;font-weight:600;font-size:17px;background:var(--acc-soft);border-radius:12px;padding:18px 12px}
 .post h4{font-size:18px;margin:34px 0 14px;padding-left:10px;border-left:4px solid var(--acc)}
 .post blockquote{margin:0 0 20px;padding:18px 20px;background:var(--bg);border-radius:12px;text-align:center}
@@ -50,7 +50,7 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 .post .cta b{display:block;font-size:17px;margin-bottom:10px}
 .post .cta span{display:inline-block;background:var(--acc);color:var(--card);border-radius:999px;padding:8px 22px;font-weight:700;font-size:14px}
 .post .foot{font-size:12px;color:var(--sub);margin:22px 0 0;border-top:1px solid var(--line);padding-top:12px}
-.topics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.topics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
 .topic{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
 .tag{display:inline-block;font-size:12px;font-weight:700;color:#fff;border-radius:6px;padding:2px 8px}
 .t-consign{background:var(--violet)}.t-buy{background:var(--blue)}.t-repair{background:var(--green)}.t-sell{background:var(--rose)}
@@ -65,14 +65,6 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 .ask ol{margin:0;padding-left:20px}
 .ask li{margin:4px 0}
 .src{font-size:12px;color:var(--sub);margin-top:14px}
-@media (max-width:720px){
- header h1{font-size:24px}
- .flow{grid-template-columns:1fr 1fr}
- .step:nth-child(2):after{display:none}
- .rules,.topics{grid-template-columns:1fr}
- .bar span{font-size:11px}
- .post article{padding:22px 16px 26px}
-}
 .why2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.why2>div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}.why2 b{display:block;font-size:16px;margin:8px 0 4px}.why2 p{margin:0 0 8px;font-size:14px}.why2 em{display:block;font-style:normal;font-size:12px;color:#03a94d}@media (max-width:720px){.why2{grid-template-columns:1fr}}
 .nvbox{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:16px}
 .nvq{margin:0 0 14px;font-size:15px}
@@ -87,7 +79,7 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 .annot-toggle{display:flex;justify-content:flex-end;gap:8px;align-items:center;margin:0 0 10px;font-size:13px;color:var(--sub)}
 .annot-toggle button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
 .legend2{display:flex;gap:12px;font-size:12px;color:var(--sub);margin:0 0 10px;flex-wrap:wrap}
-.row{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:22px;align-items:start}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:36px;align-items:start}
 .note{font-size:13px;line-height:1.55;background:var(--acc-soft);border-radius:10px;padding:10px 12px;margin-bottom:16px;border-left:3px solid var(--acc)}
 .note b{display:block;margin:3px 0 2px;font-size:13px}
 .note p{margin:0!important;font-size:13px!important;color:var(--sub)}
@@ -96,9 +88,7 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 .nk{font-size:11px;font-weight:700;color:var(--card);background:var(--acc);border-radius:4px;padding:1px 6px}
 .hide-notes .note{display:none}
 .hide-notes .row{grid-template-columns:1fr}
-.hide-notes.post.annot{max-width:640px}
-@media (max-width:900px){.row{grid-template-columns:minmax(0,1fr) minmax(0,190px);gap:14px}.post,.post *{overflow-wrap:anywhere;min-width:0}}
-@media (max-width:600px){.post article{padding:18px 10px 22px!important}.row{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:8px}.post p{font-size:14px}.post .hook{font-size:14px;padding:12px 6px}.post h3{font-size:18px}.post h4{font-size:15px}.post blockquote{padding:12px 10px}.note{padding:8px;margin-bottom:12px}.note b{font-size:12px}.note p{font-size:11.5px!important;line-height:1.5}}
+.hide-notes.post.annot{max-width:820px;margin:0 auto}
 </style>
 </head>
 <body>
