@@ -42,42 +42,39 @@ h2 small{font-size:15px;color:var(--sub);font-weight:500}
 .kw{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .kw span{font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
 .kw b{color:var(--acc)}
-.split{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:28px;align-items:start}
 .post{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
-.post .top{display:flex;align-items:center;gap:8px;padding:14px 24px;border-bottom:1px solid var(--line);font-size:13px;color:var(--sub)}
+.post .top{display:flex;align-items:center;gap:8px;padding:14px 28px;border-bottom:1px solid var(--line);font-size:13px;color:var(--sub)}
 .post .top i{width:26px;height:26px;border-radius:50%;background:var(--acc)}
-.post article{padding:40px 56px 44px 64px}
-.blk{position:relative;border-radius:10px;transition:background .15s}
-.blk.on{background:var(--soft);box-shadow:0 0 0 8px var(--soft)}
-.mk{position:absolute;left:-44px;top:2px;width:24px;height:24px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--sub);font:600 11px Pretendard,sans-serif;cursor:pointer;padding:0}
-.blk.on .mk,.mk:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+.post .colhd{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:40px;padding:14px 40px 0;font-size:13px;color:var(--sub)}
+.post .colhd div:last-child{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.post article{padding:24px 40px 44px}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:40px;align-items:start}
 .post h3{font-size:26px;line-height:1.4;margin:0 0 28px}
 .post p{margin:0 0 22px;font-size:17px;line-height:1.8}
 .post .hook{text-align:center;font-weight:600;font-size:18px;background:var(--soft);border-radius:12px;padding:20px 12px}
-.post h4{font-size:19px;margin:36px 0 16px;padding-left:12px;border-left:4px solid var(--acc)}
+.post h4{font-size:19px;margin:30px 0 16px;padding-left:12px;border-left:4px solid var(--acc)}
 .post blockquote{margin:0 0 22px;padding:20px 24px;background:var(--bg);border-radius:12px;text-align:center}
 .post blockquote p{margin:0 0 6px;font-weight:600;font-size:16px}
 .post cite{font-size:13px;color:var(--sub);font-style:normal}
+.post cite a{color:var(--acc);font-weight:600}
 .post .cta{border:1.5px solid var(--acc);border-radius:14px;padding:20px;text-align:center;margin:30px 0 8px}
 .post .cta b{display:block;font-size:18px;margin-bottom:12px}
 .post .cta span{display:inline-block;background:var(--acc);color:#fff;border-radius:999px;padding:9px 26px;font-weight:700;font-size:15px}
 .post .foot{font-size:12px;color:var(--sub);border-top:1px solid var(--line);padding-top:12px;margin-top:26px}
-.notes{position:sticky;top:20px;max-height:calc(100vh - 40px);display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
-.notes .hd{padding:14px 18px;border-bottom:1px solid var(--line);font-size:13px;color:var(--sub);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.notes .hd b{color:var(--ink);font-size:15px;margin-right:4px}
-.notes ol{list-style:none;margin:0;padding:10px;overflow:auto}
-.nt{display:flex;gap:10px;padding:12px 10px;border-radius:10px;cursor:pointer}
-.nt+.nt{border-top:1px solid var(--line)}
-.nt.on{background:var(--soft)}
-.nt .num{flex:none;width:24px;height:24px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-size:11px;font-weight:700;color:var(--sub)}
-.nt.on .num{background:var(--acc);color:#fff}
-.nt b{font-size:14px}
-.nt p{margin:4px 0 0;font-size:13px;color:var(--sub);line-height:1.55}
+.note{font-size:13px;line-height:1.55;background:var(--soft);border-radius:10px;padding:12px 14px;margin-bottom:18px;border-left:3px solid var(--acc)}
+.note b{font-size:14px}
+.note p{margin:4px 0 0!important;font-size:13px!important;line-height:1.55!important;color:var(--sub)}
 .nk{font-size:11px;font-weight:700;color:#fff;border-radius:4px;padding:1px 6px}
 .nk-s{background:var(--blue)}.nk-w{background:var(--violet)}.nk-c{background:var(--green)}
-.nt .nv{display:inline-block;margin-top:6px;font-style:normal;font-size:11px;font-weight:600;color:var(--nv);border:1px solid var(--nv);border-radius:4px;padding:1px 6px}
-.nt .warn{display:block;margin-top:6px;font-style:normal;font-size:12px;font-weight:600;color:var(--red);background:rgba(192,57,43,.08);border-radius:6px;padding:5px 8px}
-
+.note .nv{display:inline-block;margin-top:6px;font-style:normal;font-size:11px;font-weight:600;color:var(--nv);border:1px solid var(--nv);border-radius:4px;padding:1px 6px}
+.note .warn{display:block;margin-top:6px;font-style:normal;font-size:12px;font-weight:600;color:var(--red);background:rgba(192,57,43,.08);border-radius:6px;padding:5px 8px}
+.donut{display:flex;align-items:center;gap:14px;justify-content:center}
+.donut .pie{width:104px;height:104px;border-radius:50%;background:conic-gradient(var(--blue) 0 30%,var(--acc) 30% 60%,var(--green) 60% 80%,var(--violet) 80% 90%,var(--rose) 90% 100%);display:grid;place-items:center;flex:none}
+.donut .pie span{width:62px;height:62px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-weight:800;font-size:15px}
+.donut ul{list-style:none;margin:0;padding:0;font-size:12.5px;text-align:left}
+.donut li{display:flex;align-items:center;gap:6px;line-height:1.7}
+.donut li i{width:10px;height:10px;border-radius:3px;flex:none}
+.donut li em{font-style:normal;color:var(--sub);margin-left:auto;padding-left:8px}
 /* 3. 다음 주제 */
 .serp{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;margin-bottom:20px}
 .hb div{display:grid;grid-template-columns:120px 1fr 44px;align-items:center;gap:10px;font-size:14px;margin:7px 0}
@@ -141,13 +138,7 @@ h2 small{font-size:15px;color:var(--sub);font-weight:500}
   <div class="node"><div class="ic">2</div><b>가방 1개 고르기</b><div class="chips"><span class="chip">고객 사연</span><span class="chip">가방 유래</span><span class="chip">감정 포인트</span></div></div>
   <div class="arr">→</div>
   <div class="node"><div class="ic">3</div><b>100점 채점</b>
-   <div class="sbar">
-    <div><span>근거</span><i style="width:60%;background:var(--blue)"></i>30</div>
-    <div><span>검색 수요</span><i style="width:60%;background:var(--acc)"></i>30</div>
-    <div><span>상담 연결</span><i style="width:40%;background:var(--green)"></i>20</div>
-    <div><span>최신</span><i style="width:20%;background:var(--violet)"></i>10</div>
-    <div><span>균형</span><i style="width:20%;background:var(--rose)"></i>10</div>
-   </div></div>
+   <div class="donut"><div class="pie"><span>100점</span></div><ul><li><i style="background:var(--blue)"></i>근거<em>30</em></li><li><i style="background:var(--acc)"></i>검색 수요<em>30</em></li><li><i style="background:var(--green)"></i>상담 연결<em>20</em></li><li><i style="background:var(--violet)"></i>최신<em>10</em></li><li><i style="background:var(--rose)"></i>균형<em>10</em></li></ul></div></div>
   <div class="arr">→</div>
   <div class="node"><div class="ic">4</div><b>원고 작성</b><div class="chips"><span class="chip">정해진 구조</span><span class="chip">검수</span><span class="chip">담당자 확인</span></div></div>
  </div>
@@ -157,77 +148,42 @@ h2 small{font-size:15px;color:var(--sub);font-weight:500}
 <section id="s2">
  <h2><span class="no">2</span>1회차 원고 <small>매입 · 구찌 디오니소스</small></h2>
  <div class="kw"><span>중고명품매입 월 <b>12,240</b></span><span>명품매입 <b>7,810</b></span><span>명품가방매입 <b>2,310</b></span><span>구찌디오니소스 <b>360</b></span></div>
- <div class="split">
-  <div class="post">
+ <div class="post">
    <div class="top"><i></i>김럭스 공식 블로그</div>
+   <div class="colhd"><div>원고</div><div><span>주석</span><span class="nk nk-s">구조</span><span class="nk nk-c">내용</span><span class="nk nk-w">문장</span><span style="color:var(--nv);font-weight:600">네이버 근거</span><span style="color:var(--red);font-weight:600">확인 필요</span></div></div>
    <article>
-<div class="blk" id="b1" data-n="1"><button class="mk" data-n="1" type="button">1</button><h3>중고명품매입 구찌 디오니소스 , 60만~105만 원 도대체 얼마일까?</h3></div>
-<div class="blk" id="b2" data-n="2"><button class="mk" data-n="2" type="button">2</button><p class="hook">국내 중고명품 거래량 1위<sup>*</sup> 김럭스가 알려드리는 중고명품 매입!<br>가지고 있는 명품<br>사진만 찍으면??<br>김럭스가 다~ 팔아드립니다!</p></div>
-<div class="blk" id="b3" data-n="3"><button class="mk" data-n="3" type="button">3</button><p>최근, 한 고객님께서 카톡으로 가방 사진 3장과 함께 매입 문의를 주셨어요.<br>가방의 정체는 바로 구찌 디오니소스 였는데요.</p></div>
-<div class="blk" id="b4" data-n="4"><button class="mk" data-n="4" type="button">4</button><p>“이제 마지막입니다.“<br>금주 1주년 기념으로 술마시던 시절 물건들을 정리하는 중이신데,<br>와인잔 세트나 옷까지 다 버리셨는데 이 가방만 못버리고 계셨다더라고요.<br>아무래도 가격이 있다보니 아까워서 못 버리고, 모셔두기도 아깝잖아요.</p></div>
-<div class="blk" id="b5" data-n="5"><button class="mk" data-n="5" type="button">5</button><p>그때 인스타에서 김럭스를 보신게 생각나서 재미삼아 가격을 확인해보셨는데, 예상 가격이 60만~105만 원이 나왔대요.<br>생각보다 괜찮다 싶어서 카카오톡 문의까지 하게 되신거죠.</p></div>
-<div class="blk" id="b6" data-n="6"><button class="mk" data-n="6" type="button">6</button><p>“회식 날에만 들었고, 집에 오면 바로 더스트백에 넣어 뒀어요. 거의 새 거니까 105만 원 나오죠?”<br>사진을 보니 정말 상태가 좋아 보였어요.<br>그런데 사진은 앞면, 옆면, 버클장식 세 장뿐이었고 안쪽 사진은 없었어요.</p></div>
-<div class="blk" id="b7" data-n="7"><button class="mk" data-n="7" type="button">7</button><p>예상 가격을 정확하게 받아 보시려면 안쪽 사진도 꼭 함께 보내 주세요.<br>명품은 겉보다 안쪽 상태에서 가격이 갈리는 경우가 많거든요.</p></div>
-<div class="blk" id="b8" data-n="8"><button class="mk" data-n="8" type="button">8</button><p>저희는 안을 열어 보기 전에는 정확한 가격을 말씀드리기 어렵다고 말씀드리면서,<br>가방을 상자에 담아두시기만 하면 무료로 수거해드린다고 안내해 드렸어요.</p></div>
-<div class="blk" id="b9" data-n="9"><button class="mk" data-n="9" type="button">9</button><h4>디오니소스의 정체??</h4></div>
-<div class="blk" id="b10" data-n="10"><button class="mk" data-n="10" type="button">10</button><p>고객님께서는 이 가방에 대한 이야기도 함께 전해 주셨는데요.<br>이 가방은 5년 전에 승진 기념으로 사신 거래요.<br>회식이 있는 날이면 꼭 이 가방을 들고 나가실 만큼 애착 가방이었고요.</p></div>
-<div class="blk" id="b11" data-n="11"><button class="mk" data-n="11" type="button">11</button><p>그런데 술을 끊고 처음 나간 금주 모임에서, 옆자리 분이 가방을 보더니 웃으면서 이렇게 말했대요.<br>&quot;디오니소스가 무슨 신인지 아세요? 술의 신이에요!”<br>5년 동안 술의 신을 어깨에 메고 회식에 다니셨던 거죠.</p></div>
-<div class="blk" id="b12" data-n="12"><button class="mk" data-n="12" type="button">12</button><p>“이젠 진짜 술과 이별을 할 시간이네요.”<br>이 말을 들으니 저까지 시원섭섭한 마음이 들더라고요.</p></div>
-<div class="blk" id="b13" data-n="13"><button class="mk" data-n="13" type="button">13</button><h4>두 개의 호랑이 머리, 버클 장식의 의미</h4></div>
-<div class="blk" id="b14" data-n="14"><button class="mk" data-n="14" type="button">14</button><p>이틀 뒤 가방이 도착했는데요.<br>도착하자마자 GLA 인증 감정사가 감정을 시작하고,<br>고객님께 김럭스 내 상품 화면에서 진행 상황을 바로 확인하실 수 있다고 말씀드리니<br>상태를 바로바로 확인할 수 있어 마음이 놓이셨다고 하더라고요.</p></div>
-<div class="blk" id="b15" data-n="15"><button class="mk" data-n="15" type="button">15</button><p>가방은 고객님 말씀대로 겉은 정말 깨끗했어요.<br>더스트백은 처음 받았을 때 접힌 자국까지 그대로 였고요.</p></div>
-<div class="blk" id="b16" data-n="16"><button class="mk" data-n="16" type="button">16</button><blockquote><p>“제우스가 보내 준 호랑이를 타고 티그리스 강을 건넜다는 그리스 신화 속 신 디오니소스를 떠올리게 하는 독특한 디테일의 텍스처 타이거 헤드 클로저가 돋보이는 컬렉션 제품”</p><cite>출처: 구찌 공식 홈페이지 디오니소스 상품 설명</cite></blockquote></div>
-<div class="blk" id="b17" data-n="17"><button class="mk" data-n="17" type="button">17</button><p>구찌 디오니소스는 앞면 버클장식이 포인트인거 다들 아시죠?<br>이 컬렉션은 알레산드로 미켈레가 구찌를 맡은 2015년에 처음 나온 가방이기도 하고요.</p></div>
-<div class="blk" id="b18" data-n="18"><button class="mk" data-n="18" type="button">18</button><p>받아본 가방을 살펴보니 버클 뿐만 아니라 손잡이와 모서리도 흠집이 거의 없어 새거 같았어요.<br>안쪽 태그 폰트와 공정 디테일까지 살펴서 정품인 것도 확인했고요.<br>여기까지만 보면 고객님 말씀처럼 105만 원에 가까웠어요.</p></div>
-<div class="blk" id="b19" data-n="19"><button class="mk" data-n="19" type="button">19</button><h4>여기까지 봐야 진짜 감정</h4></div>
-<div class="blk" id="b20" data-n="20"><button class="mk" data-n="20" type="button">20</button><p>그런데 가방을 열어 보니 안감에 붉은 얼룩이 있었어요.<br>심지어 손바닥 반만 한 와인 자국이었는데요.<br>이렇게 되면 105만원은 물건너 간 셈이죠.</p></div>
-<div class="blk" id="b21" data-n="21"><button class="mk" data-n="21" type="button">21</button><p>김럭스는 중고 가방 상태를 꼼꼼하게 정밀 감정 후에 N, S, SA, A 네 등급으로 나누는데요.<br>오늘 소개한 일화처럼 사용한 흔적이 눈에 보이면 A등급이에요.<br>겉이 아무리 깨끗해도 안쪽에 얼룩이 있으면 A가 될 수 있어요.</p></div>
-<div class="blk" id="b22" data-n="22"><button class="mk" data-n="22" type="button">22</button><h4>그래서 최종 가격은???</h4></div>
-<div class="blk" id="b23" data-n="23"><button class="mk" data-n="23" type="button">23</button><p>감정 결과는 70만원 이였어요.</p></div>
-<div class="blk" id="b24" data-n="24"><button class="mk" data-n="24" type="button">24</button><p>&quot;얼룩 하나로 그렇게 차이가 나요?&quot;<br>당연히 고객님은 이해하기 어렵다는 입장이셨는데요.<br>가방을 열 때마다 바로 보이는 얼룩이라 어쩔 수 없다고 말씀드렸어요.<br>얼룩만 없었다면 105만 원 받을 수도 있었는데 저희도 아쉽더라고요.</p></div>
-<div class="blk" id="b25" data-n="25"><button class="mk" data-n="25" type="button">25</button><p>고객님은 잠깐 말이 없으시다가 웃는 이모티콘을 보내셨어요.<br>혹시 안 팔면 비용이 드냐고도 물어보셨는데,<br>안 파셔도 수거·반송 배송비와 감정 비용은 받지 않고 가방은 저희가 택배로 다시 보내 드린다고 말씀드리니<br>고객님은 하루 정도 고민하시고 판매를 결정하셨어요.</p></div>
-<div class="blk" id="b26" data-n="26"><button class="mk" data-n="26" type="button">26</button><p>사실 다른 중고거래 사이트에 직접 올리면 몇만 원은 더 받으실 수도 있었을 거예요.<br>그런데 사진 찍어 올리고, 가격 흥정하고, 정품 맞냐는 질문에 하나하나 답하는 과정이 번거로우셨대요.<br>몇만 원 더 받자고 그 과정을 겪으며 스트레스 받기는 싫으셨다고요.</p></div>
-<div class="blk" id="b27" data-n="27"><button class="mk" data-n="27" type="button">27</button><p>판매하신 다는 말씀을 듣자마자 등록해 두신 계좌로 입금해 드렸어요.<br>입금까지 날짜를 세어보니 카톡으로 처음 문의하신 날부터 나흘 정도 걸렸네요.</p></div>
-<div class="blk" id="b28" data-n="28"><button class="mk" data-n="28" type="button">28</button><p>집안에 명품이 있으신가요?<br>그렇다면 재미삼아 알아보는 것도 추천드려요!<br>혹시 알아요? 비싼 값에 팔릴지?</p></div>
-<div class="blk" id="b29" data-n="29"><button class="mk" data-n="29" type="button">29</button><div class="cta"><b>내 명품 가격이 궁금하다면?</b><span>지금 알아보기</span></div></div>
+<div class="row"><div class="blk"><h3>중고명품매입 구찌 디오니소스 , 60만~105만 원 도대체 얼마일까?</h3></div><aside class="note"><span class="nk nk-s">구조</span> <b>검색어 + 궁금증</b><p>가장 많이 찾는 &#x27;중고명품매입&#x27;(월 12,240)을 맨 앞에 두고, 홈페이지 예상가 범위 &#x27;60만~105만 원&#x27;을 그대로 보여 줍니다. &#x27;도대체 얼마일까?&#x27;는 최종 금액이 궁금해 끝까지 읽게 만드는 장치예요.</p><em class="nv">네이버 맥락 없는 키워드 피함</em></aside></div>
+<div class="row"><div class="blk"><p class="hook">국내 중고명품 거래량 1위<sup>*</sup> 김럭스가 알려드리는 중고명품 매입!<br>가지고 있는 명품<br>사진만 찍으면??<br>김럭스가 다~ 팔아드립니다!</p></div><aside class="note"><span class="nk nk-s">구조</span> <b>브랜드 후킹 4줄</b><p>① 누가(거래량 1위 김럭스) ② 무엇을(중고명품 매입) ③ 얼마나 쉬운지(사진만 찍으면) ④ 약속(다~ 팔아드립니다). 업체 소개는 여기와 마지막 버튼에만 둡니다.</p><em class="nv">네이버 과도한 홍보 피함</em><em class="warn">근거 필요: &#x27;국내 중고명품 거래량 1위&#x27;는 집계 기준과 기간을 각주에 적어야 합니다 (원칙③ 거짓 없는 진정성).</em></aside></div>
+<div class="row"><div class="blk"><p>최근, 한 고객님께서 카톡으로 가방 사진 3장과 함께 매입 문의를 주셨어요.<br>가방의 정체는 바로 구찌 디오니소스 였는데요.</p></div><aside class="note"><span class="nk nk-s">구조</span> <b>사연으로 시작</b><p>정보부터 말하면 독자가 빠져나갑니다. &#x27;최근, 한 고객님께서&#x27;로 실제 상담 장면을 열고, 가방 이름을 바로 밝혀 검색해서 들어온 분이 &#x27;내 얘기&#x27;인지 바로 알게 합니다.</p><em class="nv">네이버 원칙① 직접 경험</em></aside></div>
+<div class="row"><div class="blk"><p>“이제 마지막입니다.“<br>금주 1주년 기념으로 술마시던 시절 물건들을 정리하는 중이신데,<br>와인잔 세트나 옷까지 다 버리셨는데 이 가방만 못버리고 계셨다더라고요.<br>아무래도 가격이 있다보니 아까워서 못 버리고, 모셔두기도 아깝잖아요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>팔려는 이유</b><p>&#x27;금주 1주년&#x27;은 이 글의 웃음 포인트를 미리 깔아 두는 설정입니다. &#x27;버리기엔 아깝고 모셔 두기도 아깝다&#x27;는 안 드는 명품을 가진 독자 대부분의 마음이에요.</p><em class="nv">네이버 체크① 독자·상황</em></aside></div>
+<div class="row"><div class="blk"><p>그때 인스타에서 김럭스를 보신게 생각나서 재미삼아 가격을 확인해보셨는데, 예상 가격이 60만~105만 원이 나왔대요.<br>생각보다 괜찮다 싶어서 카카오톡 문의까지 하게 되신거죠.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>예상가 확인 → 문의</b><p>인스타에서 보고 홈페이지에서 예상가를 먼저 확인하는 흐름은 김럭스의 실제 유입 경로입니다. 60만~105만 원은 홈페이지 판매하기 화면에 나온 같은 모델의 예상 범위예요.</p><em class="nv">네이버 체크② 절차</em></aside></div>
+<div class="row"><div class="blk"><p>“회식 날에만 들었고, 집에 오면 바로 더스트백에 넣어 뒀어요. 거의 새 거니까 105만 원 나오죠?”<br>사진을 보니 정말 상태가 좋아 보였어요.<br>그런데 사진은 앞면, 옆면, 버클장식 세 장뿐이었고 안쪽 사진은 없었어요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>고객 대사 = 독자의 기대</b><p>&#x27;거의 새 거니까 최고가 나오죠?&#x27;는 파는 사람 누구나 하는 기대라 고객 입으로 대신 말합니다. 안쪽 사진이 없다는 문장이 뒤의 반전을 예고합니다.</p><em class="nv">네이버 체크① 독자·상황</em></aside></div>
+<div class="row"><div class="blk"><p>예상 가격을 정확하게 받아 보시려면 안쪽 사진도 꼭 함께 보내 주세요.<br>명품은 겉보다 안쪽 상태에서 가격이 갈리는 경우가 많거든요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>경험자만 아는 팁</b><p>감정하는 사람만 아는 사실을 독자가 바로 쓸 수 있는 팁으로 줍니다. 뒤에 나올 안쪽 와인 얼룩 반전도 미리 깔아 둡니다.</p><em class="nv">네이버 체크② 경험자만 아는 팁</em></aside></div>
+<div class="row"><div class="blk"><p>저희는 안을 열어 보기 전에는 정확한 가격을 말씀드리기 어렵다고 말씀드리면서,<br>가방을 상자에 담아두시기만 하면 무료로 수거해드린다고 안내해 드렸어요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>사진만으로는 단정하지 않음</b><p>실물을 보기 전에는 금액을 확정하지 않는다는 태도로 신뢰를 줍니다. 상자에 담아 두면 무료로 수거해 간다는 건 사이트에 있는 실제 서비스입니다.</p><em class="nv">네이버 체크② 경험자만 아는 팁</em></aside></div>
+<div class="row"><div class="blk"><h4>디오니소스의 정체??</h4></div><aside class="note"><span class="nk nk-s">구조</span> <b>소제목은 독자의 궁금증</b><p>&#x27;디오니소스가 뭐지?&#x27;라는 궁금증을 소제목으로 세워 다음 이야기를 읽게 합니다.</p><em class="nv">네이버 원칙④ 소제목</em></aside></div>
+<div class="row"><div class="blk"><p>고객님께서는 이 가방에 대한 이야기도 함께 전해 주셨는데요.<br>이 가방은 5년 전에 승진 기념으로 사신 거래요.<br>회식이 있는 날이면 꼭 이 가방을 들고 나가실 만큼 애착 가방이었고요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>가방과 고객의 사연</b><p>승진 기념, 회식 날 애착 가방이라는 설정이 다음 문단의 반전을 웃기게 만듭니다.</p><em class="nv">네이버 원칙① 개인의 감정</em></aside></div>
+<div class="row"><div class="blk"><p>그런데 술을 끊고 처음 나간 금주 모임에서, 옆자리 분이 가방을 보더니 웃으면서 이렇게 말했대요.<br>&quot;디오니소스가 무슨 신인지 아세요? 술의 신이에요!”<br>5년 동안 술의 신을 어깨에 메고 회식에 다니셨던 거죠.</p></div><aside class="note"><span class="nk nk-s">구조</span> <b>재미 포인트</b><p>술을 끊은 사람이 5년 동안 &#x27;술의 신&#x27;을 메고 다녔다는 반전. 이 글을 친구에게 얘기하고 싶게 만드는 장면이에요.</p><em class="nv">네이버 원칙① 취향·감정·관점</em></aside></div>
+<div class="row"><div class="blk"><p>“이젠 진짜 술과 이별을 할 시간이네요.”<br>이 말을 들으니 저까지 시원섭섭한 마음이 들더라고요.</p></div><aside class="note"><span class="nk nk-w">문장</span> <b>작성자의 감정</b><p>&#x27;저까지 시원섭섭한 마음이 들더라고요&#x27;처럼 작성자가 함께 느끼는 문장을 넣어 광고문이 아니라 사람이 쓴 이야기로 읽히게 합니다.</p><em class="nv">네이버 원칙① 개인의 감정</em></aside></div>
+<div class="row"><div class="blk"><h4>두 개의 호랑이 머리, 버클 장식의 의미</h4></div><aside class="note"><span class="nk nk-s">구조</span> <b>유래로 전문성 보여 주기</b><p>가방 장식의 의미를 소제목으로 세웁니다. 유래를 아는 업체라는 점이 &#x27;감정까지 맡겨도 되겠다&#x27;는 신뢰로 이어집니다.</p><em class="nv">네이버 원칙② 전문 출처</em></aside></div>
+<div class="row"><div class="blk"><p>이틀 뒤 가방이 도착했는데요.<br>도착하자마자 GLA 인증 감정사가 감정을 시작하고,<br>고객님께 김럭스 내 상품 화면에서 진행 상황을 바로 확인하실 수 있다고 말씀드리니<br>상태를 바로바로 확인할 수 있어 마음이 놓이셨다고 하더라고요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>감정 과정을 고객 감정으로</b><p>GLA 인증 감정사와 &#x27;내 상품&#x27; 화면 진행 확인은 사이트에 있는 실제 절차입니다. 절차를 나열하지 않고 &#x27;마음이 놓이셨다&#x27;는 고객 반응으로 전합니다.</p><em class="nv">네이버 체크② 절차</em></aside></div>
+<div class="row"><div class="blk"><p>가방은 고객님 말씀대로 겉은 정말 깨끗했어요.<br>더스트백은 처음 받았을 때 접힌 자국까지 그대로 였고요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>겉 상태 확인</b><p>더스트백 접힌 자국까지 그대로라는 구체적 장면으로 &#x27;새것 같다&#x27;는 기대를 한 번 더 올립니다.</p><em class="nv">네이버 체크④ 직접 관찰</em></aside></div>
+<div class="row"><div class="blk"><blockquote><p>“제우스가 보내 준 호랑이를 타고 티그리스 강을 건넜다는 그리스 신화 속 신 디오니소스를 떠올리게 하는 독특한 디테일의 텍스처 타이거 헤드 클로저가 돋보이는 컬렉션 제품”</p><cite>출처: 구찌 공식 홈페이지 디오니소스 컬렉션 <a href="https://www.gucci.com/kr/ko/st/capsule/dionysus-collection" target="_blank" rel="noopener">원문 보기</a></cite></blockquote></div><aside class="note"><span class="nk nk-c">내용</span> <b>유래는 공식 출처 인용 = 감정 업체의 전문성</b><p>버클 호랑이 장식의 의미를 구찌 공식 홈페이지에서 인용하고 원문 링크를 달았습니다. 가방을 깊이 아는 감정 업체라는 인상을 주고, 바로 뒤 버클 상태 확인 장면으로 이어집니다.</p><em class="nv">네이버 원칙③ 원작자·원문 밝히기</em><em class="warn">인용 문구 확인 필요: 구찌 페이지 원문은 &quot;제우스가 보낸 호랑이를 타고 티그리스강을 건넜다는 그리스 신화 속 디오니서스를 기념합니다&quot;로, 원고 인용과 표현이 다릅니다.</em></aside></div>
+<div class="row"><div class="blk"><p>구찌 디오니소스는 앞면 버클장식이 포인트인거 다들 아시죠?<br>이 컬렉션은 알레산드로 미켈레가 구찌를 맡은 2015년에 처음 나온 가방이기도 하고요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>디자이너·연도까지</b><p>미켈레가 구찌를 맡은 2015년에 나온 가방이라는 정보로, 모델을 정확히 아는 업체임을 보여 줍니다. &#x27;다들 아시죠?&#x27;로 독자를 대화에 끌어들입니다.</p><em class="nv">네이버 원칙① 공식 자료 인용</em></aside></div>
+<div class="row"><div class="blk"><p>받아본 가방을 살펴보니 버클 뿐만 아니라 손잡이와 모서리도 흠집이 거의 없어 새거 같았어요.<br>안쪽 태그 폰트와 공정 디테일까지 살펴서 정품인 것도 확인했고요.<br>여기까지만 보면 고객님 말씀처럼 105만 원에 가까웠어요.</p></div><aside class="note"><span class="nk nk-s">구조</span> <b>기대를 최고치로</b><p>버클·손잡이·모서리까지 깨끗하고 정품 확인까지 마쳐서 &#x27;105만 원에 가깝다&#x27;까지 올려 둡니다. 다음 반전을 위한 준비예요.</p><em class="nv">네이버 체크④ 직접 관찰</em></aside></div>
+<div class="row"><div class="blk"><h4>여기까지 봐야 진짜 감정</h4></div><aside class="note"><span class="nk nk-s">구조</span> <b>반전 예고</b><p>&#x27;여기까지 봐야 진짜 감정&#x27;은 겉만 보고 판단하면 안 된다는, 이 글이 하고 싶은 말입니다.</p><em class="nv">네이버 원칙④ 소제목</em></aside></div>
+<div class="row"><div class="blk"><p>그런데 가방을 열어 보니 안감에 붉은 얼룩이 있었어요.<br>심지어 손바닥 반만 한 와인 자국이었는데요.<br>이렇게 되면 105만원은 물건너 간 셈이죠.</p></div><aside class="note"><span class="nk nk-s">구조</span> <b>반전: 안쪽 와인 자국</b><p>금주 설정과 &#x27;술의 신&#x27;이 와인 얼룩으로 다시 돌아옵니다. 앞에서 깐 설정을 회수하는 장면이에요.</p><em class="nv">네이버 체크④ 예상과 달랐던 점</em></aside></div>
+<div class="row"><div class="blk"><p>김럭스는 중고 가방 상태를 꼼꼼하게 정밀 감정 후에 N, S, SA, A 네 등급으로 나누는데요.<br>오늘 소개한 일화처럼 사용한 흔적이 눈에 보이면 A등급이에요.<br>겉이 아무리 깨끗해도 안쪽에 얼룩이 있으면 A가 될 수 있어요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>김럭스 등급 기준</b><p>N·S·SA·A 4등급은 사이트에 공개된 실제 기준입니다. &#x27;겉이 깨끗해도 안쪽 때문에 A가 될 수 있다&#x27;를 일화로 설명해 정보가 이야기 안에 들어가게 합니다.</p><em class="nv">네이버 체크② 주의 사항</em></aside></div>
+<div class="row"><div class="blk"><h4>그래서 최종 가격은???</h4></div><aside class="note"><span class="nk nk-s">구조</span> <b>결말 궁금증</b><p>제목의 &#x27;도대체 얼마일까?&#x27;를 여기서 회수합니다. 물음표 세 개로 작성자 말투를 유지합니다.</p><em class="nv">네이버 원칙④ 소제목</em></aside></div>
+<div class="row"><div class="blk"><p>감정 결과는 70만원 이였어요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>숫자로 결론</b><p>결과를 금액 하나로 분명히 말합니다. (70만 원은 예시이며 담당자님이 실제 사례로 바꿉니다.)</p><em class="nv">네이버 체크④ 결과</em><em class="warn">감정 시점 표기 필요: 시세는 바뀌는 정보라 발행 때 감정 연월을 적어야 합니다 (원칙⑤ 최신성).</em></aside></div>
+<div class="row"><div class="blk"><p>&quot;얼룩 하나로 그렇게 차이가 나요?&quot;<br>당연히 고객님은 이해하기 어렵다는 입장이셨는데요.<br>가방을 열 때마다 바로 보이는 얼룩이라 어쩔 수 없다고 말씀드렸어요.<br>얼룩만 없었다면 105만 원 받을 수도 있었는데 저희도 아쉽더라고요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>아쉬움도 솔직하게</b><p>고객이 납득하기 어려워한 반응을 숨기지 않고, 이유(열 때마다 보이는 얼룩)를 짧게 설명합니다.</p><em class="nv">네이버 체크④ 아쉬움·시행착오</em></aside></div>
+<div class="row"><div class="blk"><p>고객님은 잠깐 말이 없으시다가 웃는 이모티콘을 보내셨어요.<br>혹시 안 팔면 비용이 드냐고도 물어보셨는데,<br>안 파셔도 수거·반송 배송비와 감정 비용은 받지 않고 가방은 저희가 택배로 다시 보내 드린다고 말씀드리니<br>고객님은 하루 정도 고민하시고 판매를 결정하셨어요.</p></div><aside class="note"><span class="nk nk-s">구조</span> <b>&#x27;안 팔면요?&#x27;에 답하기</b><p>매입을 망설이는 독자의 가장 큰 걱정을 고객 질문으로 풉니다. 안 팔아도 수거·반송·감정 비용이 없다는 건 사이트 FAQ 기준입니다.</p><em class="nv">네이버 체크③ 대안 비교</em><em class="warn">확인 필요: 사이트 FAQ는 반송비 무료, 약관은 &#x27;반송비 부과 가능&#x27;으로 다릅니다 (지양⑤ 부정확한 정보).</em></aside></div>
+<div class="row"><div class="blk"><p>사실 다른 중고거래 사이트에 직접 올리면 몇만 원은 더 받으실 수도 있었을 거예요.<br>그런데 사진 찍어 올리고, 가격 흥정하고, 정품 맞냐는 질문에 하나하나 답하는 과정이 번거로우셨대요.<br>몇만 원 더 받자고 그 과정을 겪으며 스트레스 받기는 싫으셨다고요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>대안 비교: 직접 중고거래 vs 김럭스</b><p>다른 중고거래 사이트에 직접 올리면 몇만 원 더 받을 수 있지만, 사진·흥정·정품 문의를 혼자 감당해야 합니다. 고객이 김럭스를 고른 결정적 이유(스트레스 없이 한 번에)를 보여 줍니다.</p><em class="nv">네이버 체크③ 대안 비교</em></aside></div>
+<div class="row"><div class="blk"><p>판매하신 다는 말씀을 듣자마자 등록해 두신 계좌로 입금해 드렸어요.<br>입금까지 날짜를 세어보니 카톡으로 처음 문의하신 날부터 나흘 정도 걸렸네요.</p></div><aside class="note"><span class="nk nk-c">내용</span> <b>입금과 걸린 시간</b><p>판매 결정 후 바로 입금, 첫 문의부터 나흘. 독자가 &#x27;나도 이 정도면 되겠다&#x27;고 가늠할 수 있게 합니다. (기간은 담당자님이 실제 기준으로 수정)</p><em class="nv">네이버 체크② 시간 순서</em><em class="warn">확인 필요: 사이트 FAQ는 &#x27;바로 입금&#x27;, 약관은 &#x27;매입 확정 다음 영업일 지급&#x27;으로 다릅니다 (지양⑤ 부정확한 정보).</em></aside></div>
+<div class="row"><div class="blk"><p>집안에 명품이 있으신가요?<br>그렇다면 재미삼아 알아보는 것도 추천드려요!<br>혹시 알아요? 비싼 값에 팔릴지?</p></div><aside class="note"><span class="nk nk-s">구조</span> <b>독자 마무리 3줄</b><p>고객 이야기를 독자 이야기로 돌립니다. ① 독자 호명 ② 부담 없이 알아보기 ③ &#x27;혹시 알아요?&#x27;로 가볍게 행동을 권합니다.</p><em class="nv">네이버 체크① 독자</em></aside></div>
+<div class="row"><div class="blk"><div class="cta"><b>내 명품 가격이 궁금하다면?</b><span>지금 알아보기</span></div></div><aside class="note"><span class="nk nk-s">구조</span> <b>버튼은 끝에 한 번</b><p>본문 중간에는 매입 권유를 넣지 않고 마지막에만 둡니다. 다 읽은 사람이 바로 예상가 확인으로 넘어갑니다.</p><em class="nv">네이버 과도한 홍보·외부 링크 피함</em></aside></div>
     <p class="foot">* 국내 중고명품 거래량 1위: 집계 기준·기간 표기 예정. 60만~105만 원은 김럭스 홈페이지 판매하기 화면의 같은 모델 예상 범위. 사진은 발행 때 추가. 고객 사례·최종 금액·기간은 예시이며 발행 전 담당자님 확인.</p>
    </article>
   </div>
-  <aside class="notes">
-   <div class="hd"><b>주석</b><span class="nk nk-s">구조</span><span class="nk nk-c">내용</span><span class="nk nk-w">문장</span><span style="color:var(--nv);font-weight:600">네이버 근거</span><span style="color:var(--red);font-weight:600">확인 필요</span></div>
-   <ol>
-<li class="nt" id="n1" data-n="1"><span class="num">1</span><div><span class="nk nk-s">구조</span> <b>검색어 + 궁금증</b><p>가장 많이 찾는 &#x27;중고명품매입&#x27;(월 12,240)을 맨 앞에 두고, 홈페이지 예상가 범위 &#x27;60만~105만 원&#x27;을 그대로 보여 줍니다. &#x27;도대체 얼마일까?&#x27;는 최종 금액이 궁금해 끝까지 읽게 만드는 장치예요.</p><em class="nv">네이버 맥락 없는 키워드 피함</em></div></li>
-<li class="nt" id="n2" data-n="2"><span class="num">2</span><div><span class="nk nk-s">구조</span> <b>브랜드 후킹 4줄</b><p>① 누가(거래량 1위 김럭스) ② 무엇을(중고명품 매입) ③ 얼마나 쉬운지(사진만 찍으면) ④ 약속(다~ 팔아드립니다). 업체 소개는 여기와 마지막 버튼에만 둡니다.</p><em class="nv">네이버 과도한 홍보 피함</em><em class="warn">근거 필요: &#x27;국내 중고명품 거래량 1위&#x27;는 집계 기준과 기간을 각주에 적어야 합니다 (원칙③ 거짓 없는 진정성).</em></div></li>
-<li class="nt" id="n3" data-n="3"><span class="num">3</span><div><span class="nk nk-s">구조</span> <b>사연으로 시작</b><p>정보부터 말하면 독자가 빠져나갑니다. &#x27;최근, 한 고객님께서&#x27;로 실제 상담 장면을 열고, 가방 이름을 바로 밝혀 검색해서 들어온 분이 &#x27;내 얘기&#x27;인지 바로 알게 합니다.</p><em class="nv">네이버 원칙① 직접 경험</em></div></li>
-<li class="nt" id="n4" data-n="4"><span class="num">4</span><div><span class="nk nk-c">내용</span> <b>팔려는 이유</b><p>&#x27;금주 1주년&#x27;은 이 글의 웃음 포인트를 미리 깔아 두는 설정입니다. &#x27;버리기엔 아깝고 모셔 두기도 아깝다&#x27;는 안 드는 명품을 가진 독자 대부분의 마음이에요.</p><em class="nv">네이버 체크① 독자·상황</em></div></li>
-<li class="nt" id="n5" data-n="5"><span class="num">5</span><div><span class="nk nk-c">내용</span> <b>예상가 확인 → 문의</b><p>인스타에서 보고 홈페이지에서 예상가를 먼저 확인하는 흐름은 김럭스의 실제 유입 경로입니다. 60만~105만 원은 홈페이지 판매하기 화면에 나온 같은 모델의 예상 범위예요.</p><em class="nv">네이버 체크② 절차</em></div></li>
-<li class="nt" id="n6" data-n="6"><span class="num">6</span><div><span class="nk nk-c">내용</span> <b>고객 대사 = 독자의 기대</b><p>&#x27;거의 새 거니까 최고가 나오죠?&#x27;는 파는 사람 누구나 하는 기대라 고객 입으로 대신 말합니다. 안쪽 사진이 없다는 문장이 뒤의 반전을 예고합니다.</p><em class="nv">네이버 체크① 독자·상황</em></div></li>
-<li class="nt" id="n7" data-n="7"><span class="num">7</span><div><span class="nk nk-c">내용</span> <b>경험자만 아는 팁</b><p>감정하는 사람만 아는 사실을 독자가 바로 쓸 수 있는 팁으로 줍니다. 뒤에 나올 안쪽 와인 얼룩 반전도 미리 깔아 둡니다.</p><em class="nv">네이버 체크② 경험자만 아는 팁</em></div></li>
-<li class="nt" id="n8" data-n="8"><span class="num">8</span><div><span class="nk nk-c">내용</span> <b>사진만으로는 단정하지 않음</b><p>실물을 보기 전에는 금액을 확정하지 않는다는 태도로 신뢰를 줍니다. 상자에 담아 두면 무료로 수거해 간다는 건 사이트에 있는 실제 서비스입니다.</p><em class="nv">네이버 체크② 경험자만 아는 팁</em></div></li>
-<li class="nt" id="n9" data-n="9"><span class="num">9</span><div><span class="nk nk-s">구조</span> <b>소제목은 독자의 궁금증</b><p>&#x27;디오니소스가 뭐지?&#x27;라는 궁금증을 소제목으로 세워 다음 이야기를 읽게 합니다.</p><em class="nv">네이버 원칙④ 소제목</em></div></li>
-<li class="nt" id="n10" data-n="10"><span class="num">10</span><div><span class="nk nk-c">내용</span> <b>가방과 고객의 사연</b><p>승진 기념, 회식 날 애착 가방이라는 설정이 다음 문단의 반전을 웃기게 만듭니다.</p><em class="nv">네이버 원칙① 개인의 감정</em></div></li>
-<li class="nt" id="n11" data-n="11"><span class="num">11</span><div><span class="nk nk-s">구조</span> <b>재미 포인트</b><p>술을 끊은 사람이 5년 동안 &#x27;술의 신&#x27;을 메고 다녔다는 반전. 이 글을 친구에게 얘기하고 싶게 만드는 장면이에요.</p><em class="nv">네이버 원칙① 취향·감정·관점</em></div></li>
-<li class="nt" id="n12" data-n="12"><span class="num">12</span><div><span class="nk nk-w">문장</span> <b>작성자의 감정</b><p>&#x27;저까지 시원섭섭한 마음이 들더라고요&#x27;처럼 작성자가 함께 느끼는 문장을 넣어 광고문이 아니라 사람이 쓴 이야기로 읽히게 합니다.</p><em class="nv">네이버 원칙① 개인의 감정</em></div></li>
-<li class="nt" id="n13" data-n="13"><span class="num">13</span><div><span class="nk nk-s">구조</span> <b>유래로 전문성 보여 주기</b><p>가방 장식의 의미를 소제목으로 세웁니다. 유래를 아는 업체라는 점이 &#x27;감정까지 맡겨도 되겠다&#x27;는 신뢰로 이어집니다.</p><em class="nv">네이버 원칙② 전문 출처</em></div></li>
-<li class="nt" id="n14" data-n="14"><span class="num">14</span><div><span class="nk nk-c">내용</span> <b>감정 과정을 고객 감정으로</b><p>GLA 인증 감정사와 &#x27;내 상품&#x27; 화면 진행 확인은 사이트에 있는 실제 절차입니다. 절차를 나열하지 않고 &#x27;마음이 놓이셨다&#x27;는 고객 반응으로 전합니다.</p><em class="nv">네이버 체크② 절차</em></div></li>
-<li class="nt" id="n15" data-n="15"><span class="num">15</span><div><span class="nk nk-c">내용</span> <b>겉 상태 확인</b><p>더스트백 접힌 자국까지 그대로라는 구체적 장면으로 &#x27;새것 같다&#x27;는 기대를 한 번 더 올립니다.</p><em class="nv">네이버 체크④ 직접 관찰</em></div></li>
-<li class="nt" id="n16" data-n="16"><span class="num">16</span><div><span class="nk nk-c">내용</span> <b>유래는 공식 출처 인용 = 감정 업체의 전문성</b><p>버클 호랑이 장식의 의미를 구찌 공식 상품 설명에서 인용했습니다. 가방을 깊이 아는 감정 업체라는 인상을 주고, 바로 뒤 버클 상태 확인 장면으로 이어집니다. 발행 때 구찌 원문 링크를 함께 넣습니다.</p><em class="nv">네이버 원칙③ 원작자·원문 밝히기</em><em class="warn">원문 링크 확인 필요: 구찌 코리아 공식 몰 현재 판매 목록에서 디오니소스 상품 페이지를 찾지 못했습니다.</em></div></li>
-<li class="nt" id="n17" data-n="17"><span class="num">17</span><div><span class="nk nk-c">내용</span> <b>디자이너·연도까지</b><p>미켈레가 구찌를 맡은 2015년에 나온 가방이라는 정보로, 모델을 정확히 아는 업체임을 보여 줍니다. &#x27;다들 아시죠?&#x27;로 독자를 대화에 끌어들입니다.</p><em class="nv">네이버 원칙① 공식 자료 인용</em></div></li>
-<li class="nt" id="n18" data-n="18"><span class="num">18</span><div><span class="nk nk-s">구조</span> <b>기대를 최고치로</b><p>버클·손잡이·모서리까지 깨끗하고 정품 확인까지 마쳐서 &#x27;105만 원에 가깝다&#x27;까지 올려 둡니다. 다음 반전을 위한 준비예요.</p><em class="nv">네이버 체크④ 직접 관찰</em></div></li>
-<li class="nt" id="n19" data-n="19"><span class="num">19</span><div><span class="nk nk-s">구조</span> <b>반전 예고</b><p>&#x27;여기까지 봐야 진짜 감정&#x27;은 겉만 보고 판단하면 안 된다는, 이 글이 하고 싶은 말입니다.</p><em class="nv">네이버 원칙④ 소제목</em></div></li>
-<li class="nt" id="n20" data-n="20"><span class="num">20</span><div><span class="nk nk-s">구조</span> <b>반전: 안쪽 와인 자국</b><p>금주 설정과 &#x27;술의 신&#x27;이 와인 얼룩으로 다시 돌아옵니다. 앞에서 깐 설정을 회수하는 장면이에요.</p><em class="nv">네이버 체크④ 예상과 달랐던 점</em></div></li>
-<li class="nt" id="n21" data-n="21"><span class="num">21</span><div><span class="nk nk-c">내용</span> <b>김럭스 등급 기준</b><p>N·S·SA·A 4등급은 사이트에 공개된 실제 기준입니다. &#x27;겉이 깨끗해도 안쪽 때문에 A가 될 수 있다&#x27;를 일화로 설명해 정보가 이야기 안에 들어가게 합니다.</p><em class="nv">네이버 체크② 주의 사항</em></div></li>
-<li class="nt" id="n22" data-n="22"><span class="num">22</span><div><span class="nk nk-s">구조</span> <b>결말 궁금증</b><p>제목의 &#x27;도대체 얼마일까?&#x27;를 여기서 회수합니다. 물음표 세 개로 작성자 말투를 유지합니다.</p><em class="nv">네이버 원칙④ 소제목</em></div></li>
-<li class="nt" id="n23" data-n="23"><span class="num">23</span><div><span class="nk nk-c">내용</span> <b>숫자로 결론</b><p>결과를 금액 하나로 분명히 말합니다. (70만 원은 예시이며 담당자님이 실제 사례로 바꿉니다.)</p><em class="nv">네이버 체크④ 결과</em><em class="warn">감정 시점 표기 필요: 시세는 바뀌는 정보라 발행 때 감정 연월을 적어야 합니다 (원칙⑤ 최신성).</em></div></li>
-<li class="nt" id="n24" data-n="24"><span class="num">24</span><div><span class="nk nk-c">내용</span> <b>아쉬움도 솔직하게</b><p>고객이 납득하기 어려워한 반응을 숨기지 않고, 이유(열 때마다 보이는 얼룩)를 짧게 설명합니다.</p><em class="nv">네이버 체크④ 아쉬움·시행착오</em></div></li>
-<li class="nt" id="n25" data-n="25"><span class="num">25</span><div><span class="nk nk-s">구조</span> <b>&#x27;안 팔면요?&#x27;에 답하기</b><p>매입을 망설이는 독자의 가장 큰 걱정을 고객 질문으로 풉니다. 안 팔아도 수거·반송·감정 비용이 없다는 건 사이트 FAQ 기준입니다.</p><em class="nv">네이버 체크③ 대안 비교</em><em class="warn">확인 필요: 사이트 FAQ는 반송비 무료, 약관은 &#x27;반송비 부과 가능&#x27;으로 다릅니다 (지양⑤ 부정확한 정보).</em></div></li>
-<li class="nt" id="n26" data-n="26"><span class="num">26</span><div><span class="nk nk-c">내용</span> <b>대안 비교: 직접 중고거래 vs 김럭스</b><p>다른 중고거래 사이트에 직접 올리면 몇만 원 더 받을 수 있지만, 사진·흥정·정품 문의를 혼자 감당해야 합니다. 고객이 김럭스를 고른 결정적 이유(스트레스 없이 한 번에)를 보여 줍니다.</p><em class="nv">네이버 체크③ 대안 비교</em></div></li>
-<li class="nt" id="n27" data-n="27"><span class="num">27</span><div><span class="nk nk-c">내용</span> <b>입금과 걸린 시간</b><p>판매 결정 후 바로 입금, 첫 문의부터 나흘. 독자가 &#x27;나도 이 정도면 되겠다&#x27;고 가늠할 수 있게 합니다. (기간은 담당자님이 실제 기준으로 수정)</p><em class="nv">네이버 체크② 시간 순서</em><em class="warn">확인 필요: 사이트 FAQ는 &#x27;바로 입금&#x27;, 약관은 &#x27;매입 확정 다음 영업일 지급&#x27;으로 다릅니다 (지양⑤ 부정확한 정보).</em></div></li>
-<li class="nt" id="n28" data-n="28"><span class="num">28</span><div><span class="nk nk-s">구조</span> <b>독자 마무리 3줄</b><p>고객 이야기를 독자 이야기로 돌립니다. ① 독자 호명 ② 부담 없이 알아보기 ③ &#x27;혹시 알아요?&#x27;로 가볍게 행동을 권합니다.</p><em class="nv">네이버 체크① 독자</em></div></li>
-<li class="nt" id="n29" data-n="29"><span class="num">29</span><div><span class="nk nk-s">구조</span> <b>버튼은 끝에 한 번</b><p>본문 중간에는 매입 권유를 넣지 않고 마지막에만 둡니다. 다 읽은 사람이 바로 예상가 확인으로 넘어갑니다.</p><em class="nv">네이버 과도한 홍보·외부 링크 피함</em></div></li>
-   </ol>
-  </aside>
- </div>
 </section>
 
 <section id="s3">
@@ -252,7 +208,7 @@ h2 small{font-size:15px;color:var(--sub);font-weight:500}
    <div><b>13/28</b><span>제목에 지역명</span></div>
    <div><b>8/28</b><span>제목이 질문형</span></div>
   </div>
-  <div class="take">상위 글은 대부분 <b>"내 가방 상태와 구성품이면 얼마 받을까?"</b>에 답합니다. 가방 유래까지 다룬 글은 절반이 안 돼, 여기서 김럭스 글이 달라집니다.</div>
+  <div class="take">상위 글은 대부분 <b>"내 가방 상태와 구성품이면 얼마 받을까?"</b>에 답합니다. 가방 유래까지 다룬 글은 절반이 안 돼, 김럭스 글은 여기서 차별화됩니다.</div>
  </div>
  <div class="topics">
   <div class="tp"><span class="r">2회차</span><h3>루이비통 네버풀 매입, 파우치 없어도 제값 받을까?</h3>
@@ -273,10 +229,10 @@ h2 small{font-size:15px;color:var(--sub);font-weight:500}
    <dt>김럭스 글은</dt><dd>실제 감정 사례로 같은 모델이 왜 다른 값을 받는지 보여 줌</dd></dl>
    <div class="vol">월 검색 명품시계매입 <b>2,460</b> · 롤렉스매입 <b>2,170</b></div>
    <div class="chk">확인 필요: 김럭스 시계 매입 범위, 실제 사례</div></div>
-  <div class="tp"><span class="r">5회차</span><h3>샤넬 보이백 매입, 클래식과 보는 곳이 다를까?</h3>
-   <dl><dt>누가 찾나</dt><dd>보이백을 팔려는데 클래식만큼 값이 나올지 궁금한 분</dd>
+  <div class="tp"><span class="r">5회차</span><h3>샤넬 보이백 매입, 체인 금장 벗겨지면 얼마나 깎일까?</h3>
+   <dl><dt>누가 찾나</dt><dd>오래 들어 체인 금장이 벗겨진 보이백을 팔려는 분</dd>
    <dt>상위 글 공통점</dt><dd>7편 중 6편이 시세·견적을 다루고, 유래를 다룬 글은 1편뿐</dd>
-   <dt>김럭스 글은</dt><dd>'보이'라는 이름 이야기와 보이백 감정 포인트를 함께</dd></dl>
+   <dt>김럭스 글은</dt><dd>'보이'라는 이름 이야기로 시작해 금장 상태별 감정 사례로 이어짐</dd></dl>
    <div class="vol">월 검색 샤넬보이백 <b>4,360</b> · 샤넬매입 <b>1,620</b> · 샤넬가방매입 <b>1,410</b></div>
    <div class="chk">확인 필요: 보이백 유래 출처, 실제 사례</div></div>
  </div>
@@ -302,25 +258,13 @@ h2 small{font-size:15px;color:var(--sub);font-weight:500}
    <li><input type="checkbox"><div>감정한 연월<small>시세는 바뀌는 정보라 본문에 시점 표기</small></div><div class="w"><b>1회차 필수</b></div></li>
    <li><input type="checkbox"><div>판매 안 할 때 반송비<small>사이트 FAQ는 무료, 약관은 "부과 가능"으로 다름</small></div><div class="w"><b>1회차 필수</b></div></li>
    <li><input type="checkbox"><div>매입 확정 후 입금 시점<small>사이트 FAQ는 "바로 입금", 약관은 "다음 영업일 지급"으로 다름</small></div><div class="w"><b>1회차 필수</b></div></li>
-   <li><input type="checkbox"><div>구찌 인용 원문 링크<small>현재 구찌 코리아 몰에서 디오니소스 상품 페이지를 찾지 못함</small></div><div class="w"><b>1회차 필수</b></div></li>
+   <li><input type="checkbox"><div>구찌 인용 문구<small>링크는 넣음. 페이지 원문과 표현이 달라 원문대로 바꿀지 확인</small></div><div class="w"><b>1회차 필수</b></div></li>
    <li><input type="checkbox"><div>실제 감정 사진 10~15장<small>앞면, 버클, 안감 얼룩, 더스트백. 상위 글 사진 중간값 약 14장</small></div><div class="w"><b>1회차 필수</b></div></li>
    <li><input type="checkbox"><div>2~5회차 순서와 실제 사례<small>네버풀·켈리·보이백 유래 출처, 시계 매입 범위</small></div><div class="w">2회차 전</div></li>
   </ul>
  </div>
 </section>
 </div>
-<script>
-(function(){
- function on(n,src){
-  document.querySelectorAll('.blk.on,.nt.on').forEach(function(x){x.classList.remove('on')});
-  var b=document.getElementById('b'+n),t=document.getElementById('n'+n);
-  if(b)b.classList.add('on'); if(t)t.classList.add('on');
-  if(src==='art'&&t){var ol=t.parentNode;ol.scrollTo({top:t.offsetTop-ol.offsetTop-10,behavior:'smooth'});}
-  if(src==='note'&&b){b.scrollIntoView({behavior:'smooth',block:'center'});}
- }
- document.querySelectorAll('.blk').forEach(function(b){b.addEventListener('mouseenter',function(){on(b.dataset.n,'art')})});
- document.querySelectorAll('.nt').forEach(function(t){t.addEventListener('click',function(){on(t.dataset.n,'note')})});
-})();
-</script>
+
 </body>
 </html>
