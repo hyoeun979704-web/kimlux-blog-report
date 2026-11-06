@@ -86,7 +86,8 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 .hide-notes .note{display:none}
 .hide-notes .row{grid-template-columns:1fr}
 .hide-notes.post.annot{max-width:640px}
-@media (max-width:900px){.row{grid-template-columns:minmax(0,1fr);gap:0}.post,.post *{overflow-wrap:anywhere;min-width:0}.note{margin:-8px 0 22px}}
+@media (max-width:900px){.row{grid-template-columns:minmax(0,1fr) minmax(0,190px);gap:14px}.post,.post *{overflow-wrap:anywhere;min-width:0}}
+@media (max-width:600px){.post article{padding:18px 10px 22px!important}.row{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:8px}.post p{font-size:14px}.post .hook{font-size:14px;padding:12px 6px}.post h3{font-size:18px}.post h4{font-size:15px}.post blockquote{padding:12px 10px}.note{padding:8px;margin-bottom:12px}.note b{font-size:12px}.note p{font-size:11.5px!important;line-height:1.5}}
 </style>
 </head>
 <body>
@@ -119,7 +120,7 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
    <div><b>검색 수요</b> 네이버 월 검색량이 많은가</div>
    <div><b>상담 연결</b> 읽고 나서 판매·매입 신청으로 이어지는가</div>
    <div><b>최신</b> 최근 30일 상담에 나온 질문인가</div>
-   <div><b>균형</b> 매입·수선·판매·위탁이 한쪽으로 몰리지 않았는가</div>
+   <div><b>균형</b> 같은 브랜드·모델이 연달아 나오지 않는가</div>
   </div>
  </div>
  <div class="rules">
@@ -129,58 +130,61 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 </section>
 
 <section>
- <h2>1회차 발행 예정 게시물<small>판매 · 샤넬 클래식. 중고 샤넬을 살까 망설이는 분이 끝까지 읽고 상품을 보러 오도록 썼습니다.</small></h2>
+ <h2>1회차 발행 예정 게시물<small>매입 · 구찌 디오니소스. 안 드는 명품을 가진 분이 끝까지 읽고 예상가를 확인하러 오도록 썼습니다.</small></h2>
  <div class="why">
-  <span class="chip">샤넬백 월 검색 <b>17,760</b></span>
-  <span class="chip">샤넬클래식미듐 <b>8,600</b></span>
-  <span class="chip">샤넬클래식 <b>4,360</b></span>
-  <span class="chip">역사 출처 <b>Sotheby's</b></span>
+  <span class="chip">중고명품매입 월 검색 <b>12,240</b></span>
+  <span class="chip">명품매입 <b>7,810</b></span>
+  <span class="chip">명품가방매입 <b>2,310</b></span>
+  <span class="chip">역사 출처 <b>구찌 공식 상품 설명</b></span>
  </div>
  <div class="annot-toggle"><span>원고 옆 메모: 이 구조·문장·내용을 넣은 이유</span><button type="button" onclick="document.getElementById('post').classList.toggle('hide-notes');this.textContent=this.textContent==='주석 숨기기'?'주석 보기':'주석 숨기기'">주석 숨기기</button></div><div class="post annot" id="post">
   <div class="bar-top"><i></i>김럭스 공식 블로그</div>
   <article>
-   <div class="row"><h3>오래된 샤넬백 중고도 괜찮을까? 사려다 포기한 이유</h3><aside class="note"><span class="nk">구조</span><b>검색어 + 독자 속마음</b><p>검색어 &#x27;샤넬&#x27; &#x27;중고&#x27;를 앞에 두고, 사려는 사람이 실제로 하는 고민을 질문으로 붙였습니다. &#x27;포기한 이유&#x27;는 결말이 궁금해서 누르게 만드는 장치예요.</p></aside></div>
-   <div class="row"><div class="blk"><p class="hook">국내 중고명품 거래량 1위<sup>*</sup> 김럭스가 알려드리는 중고 샤넬!<br>매장가 1,800만 원 클래식<br>중고로 사도 괜찮을까??<br>김럭스가 100% 정품으로 책임집니다!</p></div><aside class="note"><span class="nk">구조</span><b>브랜드 후킹 4줄</b><p>① 누가(거래량 1위 김럭스) ② 무엇을(중고 샤넬) ③ 독자의 고민(1,800만 원짜리를 중고로?) ④ 약속(100% 정품). 업체 소개는 여기와 마지막 버튼에만 둡니다.</p></aside></div>
-<div class="row"><div class="blk"><p>최근, 한 고객님께서 아침 8시에 카톡 문의를 주셨어요.<br>김럭스에 올라온 10년 넘은 샤넬 클래식 램스킨을 보고 연락 주신 건데요.</p></div><aside class="note"><span class="nk">구조</span><b>사연으로 시작</b><p>정보부터 말하면 독자가 빠져나갑니다. &#x27;최근, 한 고객님께서&#x27;로 실제 상담 장면을 열어 이야기로 읽게 합니다. 아침 8시는 출근 전에 볼 만큼 간절하다는 신호예요.</p></aside></div>
-<div class="row"><div class="blk"><p>“이거 2.55 맞죠? 매일 들고 출근할 건데 이렇게 오래된 거 사도 괜찮을까요?”<br>6년째 샤넬을 위시리스트에만 담아 두셨대요.<br>그런데 새 클래식 미듐은 공식 정가만 1,800만 원이잖아요.<br>그래서 중고로 눈을 돌리신 거죠.</p></div><aside class="note"><span class="nk">내용</span><b>고객 대사 = 독자의 질문</b><p>&#x27;오래된 거 사도 괜찮을까?&#x27;는 검색하는 사람 대부분의 질문이라 고객 입으로 대신 묻습니다. 6년 위시리스트와 공식 정가 1,800만 원으로 중고를 보는 이유를 보여 줍니다.</p></aside></div>
-<div class="row"><div class="blk"><h4>2.55랑 클래식, 같은 가방 아니었어??</h4></div><aside class="note"><span class="nk">구조</span><b>소제목은 독자의 혼잣말</b><p>정보형 제목(&#x27;샤넬 2.55의 역사&#x27;) 대신 독자가 속으로 하는 질문으로 써서 다음 문단을 읽게 합니다.</p></aside></div>
-<div class="row"><div class="blk"><blockquote><p>“1955년 2월, 코코 샤넬은 2.55 플랩백을 디자인했다.”</p><cite>출처: Sotheby&#x27;s, 2026년 4월 (번역)</cite></blockquote></div><aside class="note"><span class="nk">내용</span><b>역사는 출처 있는 인용</b><p>가방 히스토리는 출처를 밝힌 인용 상자로 넣습니다. 지어낸 이야기가 아니라는 신뢰와 &#x27;알고 사는 재미&#x27;를 함께 줍니다.</p></aside></div>
-<div class="row"><div class="blk"><p>샤넬 2.55는 일흔한 살의 코코 샤넬이 내놓은 가방이에요.<br>이름도 이 날짜에서 왔고, 잠금은 마드모아젤 잠금이에요.<br>손에 들지 않고 어깨에 메서 두 손을 자유롭게 쓰라고 어깨끈을 단 가방이기도 하고요.</p></div><aside class="note"><span class="nk">내용</span><b>헷갈리는 지점 풀기</b><p>2.55와 클래식을 같은 가방으로 아는 분이 많아요. 이름의 유래와 어깨끈을 단 이유까지 짧게 풀어 줍니다.</p></aside></div>
-<div class="row"><div class="blk"><p>고객님이 보신 건 1983년 칼 라거펠트가 샤넬을 맡으면서 내놓은 클래식이었어요.<br>CC 로고를 돌려 여는 더블 C 턴록이 달린 바로 그 가방이요.<br>“28년이나 차이 나다니, 제가 6년 동안 갖고 싶던 건 클래식이에요!”</p></div><aside class="note"><span class="nk">구조</span><b>작은 반전</b><p>고객이 6년 동안 원한 건 2.55가 아니라 클래식이었다는 발견. 역사 정보가 이야기 안에서 의미를 갖게 만듭니다.</p></aside></div>
-<div class="row"><div class="blk"><p>“그럼 클래식도 어깨에 멜 수 있을까요? 지하철에서 손잡이를 잡아야 해서요.”<br>클래식도 체인 스트랩을 어깨에 메는 가방이라 걱정 안 하셔도 된다고 말씀드렸어요.</p></div><aside class="note"><span class="nk">내용</span><b>사연과 이어진 실용 질문</b><p>&#x27;매일 출근&#x27;이라는 처음 설정에서 나온 질문입니다. 독자가 실제로 궁금해할 사용성을 대화로 답합니다.</p></aside></div>
-<div class="row"><div class="blk"><p>2.55 앞 플랩 안쪽 지퍼 포켓에는 코코 샤넬이 연애편지를 넣어 두었다는 소문도 있는데요.<br>이 얘기를 해 드렸더니 클래식에도 그 포켓이 있는지 궁금해하셨어요.<br>아쉽게도 지퍼 포켓만 하나 있고, 그 외에는 텅 비어 있어요ㅎㅎ</p></div><aside class="note"><span class="nk">문장</span><b>재미 한 스푼</b><p>연애편지 이야기는 확인된 사실이 아니라 &#x27;소문&#x27;으로 표기했습니다. &#x27;ㅎㅎ&#x27;로 작성자의 말투를 살려 같은 사람이 쓴 블로그처럼 느껴지게 합니다.</p></aside></div>
-<div class="row"><div class="blk"><h4>10년 쓴 램스킨, 괜찮을까?</h4></div><aside class="note"><span class="nk">구조</span><b>두 번째 고민으로 전환</b><p>&#x27;오래된 가방이라 상태가 괜찮나&#x27;는 중고 구매의 두 번째 걱정이라 소제목으로 세웁니다.</p></aside></div>
-<div class="row"><div class="blk"><p>이 가방은 김럭스 감정에서 A등급을 받은 제품인데요.<br>김럭스는 중고 가방을 N, S, SA, A 네 등급으로 나누는데, A는 사용감이 눈에 보이는 가방이에요.<br>저희는 직접 보지 않아도 사용감을 확인하실 수 있도록 상세페이지에 상태를 메모해드리는데요.<br>하단 모서리 두 곳의 마모, 그리고 앞판에 손톱만 한 찍힘 하나가 있다고 메모해 두었어요.</p></div><aside class="note"><span class="nk">내용</span><b>김럭스 등급 체계와 상태 메모</b><p>N·S·SA·A 등급과 상세페이지 상태 메모는 김럭스 사이트에 있는 실제 운영 방식입니다. 흠을 먼저 밝혀 신뢰를 얻습니다.</p></aside></div>
-<div class="row"><div class="blk"><p>“램스킨은 약하다던데, 다른 부분들은 괜찮나요?”<br>체인이 쓸리는 뒤판도 가죽 갈라짐 없이 멀쩡했고, 금장 하드웨어도 변색 없이 그대로였어요.<br>자주 사용할 수밖에 없는 잠금장식 주변 가죽도 매끈했고요.</p></div><aside class="note"><span class="nk">문장</span><b>업계 용어 그대로</b><p>&#x27;금장 하드웨어&#x27;, &#x27;사용감&#x27;, &#x27;하단 모서리&#x27;처럼 현장에서 쓰는 말을 씁니다. 검수 항목을 목록 대신 고객 질문에 답하는 순서로 풀었습니다.</p></aside></div>
-<div class="row"><div class="blk"><p>모서리 마모는 옆에서 조명을 비춰 가며 다시 가까이 찍어 보내 드렸어요.<br>가죽 표면 결이 살짝 일어난 정도였어요.<br>“찍힘은요? 많이 보이나요?”<br>정면에서는 거의 안 보이고, 비스듬히 볼 때 작은 그림자처럼 보인다고 안내드렸어요.</p></div><aside class="note"><span class="nk">내용</span><b>온라인 구매 불안 해소</b><p>직접 못 보는 불안을 &#x27;조명 비춰 다시 찍어 보낸&#x27; 장면으로 해소합니다. 흠의 크기를 과장 없이 구체적으로 말합니다.</p></aside></div>
-<div class="row"><div class="blk"><h4>싸서 더 불안하다??</h4></div><aside class="note"><span class="nk">구조</span><b>세 번째 고민: 가격</b><p>싸면 오히려 가품일까 불안해지는 심리를 소제목으로 꺼냅니다.</p></aside></div>
-<div class="row"><div class="blk"><p>“다른 데서 본 클래식보다 많이 싸서 그런지 많이 불안해요.”<br>중고 명품 살 때 다들 한 번쯤 하는 걱정이잖아요.<br>이 가방은 보증서와 박스 없이 더스트백만 있는 구성이라 저렴한 거예요.</p></div><aside class="note"><span class="nk">내용</span><b>가격 이유를 솔직하게</b><p>저렴한 이유가 구성품(보증서·박스 없음)이라는 점을 바로 밝힙니다. 이유를 모르는 할인은 불안만 키우기 때문이에요.</p></aside></div>
-<div class="row"><div class="blk"><p>그리고 김럭스는 체계적인 감정을 통해 100% 정품만 판매해요.<br>GLA 인증 감정사가 소재, 각인, 시리얼, 부자재까지 확인하고, 혹시라도 재감정에서 가품으로 확인되면 구매대금의 200%를 돌려드려요.<br>이 말씀을 드리니 그제야 마음이 좀 놓인다고 하시더라고요.</p></div><aside class="note"><span class="nk">내용</span><b>정품 근거</b><p>100% 정품, GLA 인증 감정사, 가품이면 200% 보상은 김럭스 사이트에 명시된 내용입니다. 고객이 안심했다는 반응으로 마무리해 광고처럼 들리지 않게 합니다.</p></aside></div>
-<div class="row"><div class="blk"><p>구매 전에 이런 질문도 많이 주시는데요.<br>“받아 봤는데 사진이랑 다르면 어떡해요?”<br>받으신 날부터 7일 안에는 반품하실 수 있고, 상품 설명과 상태가 다르면 배송비도 저희가 부담하니 걱정 안 하셔도 돼요.<br>단순 변심이라면 왕복 배송비만 내시면 되고, 오후 3시 전에 결제하시면 그날 바로 출고해 드려요.</p></div><aside class="note"><span class="nk">구조</span><b>&#x27;이런 질문도 많이 주시는데요&#x27;</b><p>반품·배송 같은 절차 정보는 따로 안내문으로 빼지 않고 자주 묻는 질문 형식으로 넣습니다. 7일 반품, 오후 3시 전 당일 출고는 사이트 기준입니다.</p></aside></div>
-<div class="row"><div class="blk"><h4>그래서 사셨을까???</h4></div><aside class="note"><span class="nk">구조</span><b>결말 궁금증</b><p>제목의 &#x27;포기한 이유&#x27;를 여기서 회수합니다. 물음표 세 개로 작성자의 말투를 유지합니다.</p></aside></div>
-<div class="row"><div class="blk"><p>그날 저녁 7시쯤 답장이 왔어요.<br>“퇴근길 내내 모서리 사진만 보고 왔어요. 매일 들 가방인데 처음부터 마모가 있으면 자꾸 눈이 갈 것 같아요.”</p></div><aside class="note"><span class="nk">구조</span><b>반전: 사지 않았다</b><p>판매 글인데 고객이 사지 않는 결말입니다. 가장 예상 못 한 전개라 끝까지 읽게 됩니다.</p></aside></div>
-<div class="row"><div class="blk"><p>솔직히 저희는 충분히 사도 되는 가방이라고 생각했어요.<br>어깨에 메면 하단 모서리는 거의 안 보이거든요.<br>그래도 6년을 기다린 가방이잖아요.<br>볼 때마다 마음에 걸리면 안 되니까, 저희도 더 권하지 않았어요.</p></div><aside class="note"><span class="nk">내용</span><b>팔기보다 고객 편</b><p>&#x27;충분히 사도 되는 가방&#x27;이라는 판단은 밝히되 더 권하지 않았다는 태도가 김럭스에 대한 신뢰로 남습니다.</p></aside></div>
-<div class="row"><div class="blk"><p>“몇 달 더 기다릴게요. 모서리 반듯한 클래식 들어오면 꼭 알려 주세요!”<br>6년도 기다리셨는데 몇 달쯤이야, 저희도 열심히 찾아보려고요.</p></div><aside class="note"><span class="nk">내용</span><b>이어지는 관계</b><p>&#x27;들어오면 알려 주세요&#x27;로 끝나 거래가 아니라 관계가 남습니다. 독자에게는 &#x27;여기서 찾아 주는구나&#x27;가 전달됩니다.</p></aside></div>
-<div class="row"><div class="blk"><p>오랜 시간 꿈꿨던 가방이 있으신가요?<br>가격 때문에 고민이 되신다면 김럭스에서 먼저 찾아보세요!<br>꼭 가지고 싶은 그 가방, 김럭스가 찾아 드릴게요!</p></div><aside class="note"><span class="nk">구조</span><b>독자 마무리 3줄</b><p>고객 이야기를 독자 이야기로 돌립니다. ① 독자 호명 ② 가격 고민 공감 ③ 김럭스가 찾아 드린다는 약속.</p></aside></div>
-<div class="row"><div class="blk"><div class="cta"><b>지금 김럭스에 있는 샤넬이 궁금하다면?</b><span>지금 김럭스에서 보기</span></div></div><aside class="note"><span class="nk">구조</span><b>버튼은 끝에 한 번</b><p>본문 중간에는 구매 권유를 넣지 않고 마지막에만 둡니다. 글을 다 읽은 사람이 지금 있는 샤넬 상품으로 바로 넘어갑니다.</p></aside></div>
-   <p class="foot">* 국내 중고명품 거래량 1위: 집계 기준과 기간을 표기할 예정입니다.<br>사진은 발행할 때 넣습니다. 고객 사례와 금액은 예시이며, 발행 전 담당자님 확인을 거칩니다.</p>
+   <div class="row"><h3>중고명품매입 구찌 디오니소스 , 60만~105만 원 도대체 얼마일까?</h3><aside class="note"><span class="nk">구조</span><b>검색어 + 궁금증</b><p>가장 많이 찾는 &#x27;중고명품매입&#x27;(월 12,240)을 맨 앞에 두고, 홈페이지 예상가 범위 &#x27;60만~105만 원&#x27;을 그대로 보여 줍니다. &#x27;도대체 얼마일까?&#x27;는 최종 금액이 궁금해 끝까지 읽게 만드는 장치예요.</p></aside></div>
+   <div class="row"><div class="blk"><p class="hook">국내 중고명품 거래량 1위<sup>*</sup> 김럭스가 알려드리는 중고명품 매입!<br>가지고 있는 명품<br>사진만 찍으면??<br>김럭스가 다~ 팔아드립니다!</p></div><aside class="note"><span class="nk">구조</span><b>브랜드 후킹 4줄</b><p>① 누가(거래량 1위 김럭스) ② 무엇을(중고명품 매입) ③ 얼마나 쉬운지(사진만 찍으면) ④ 약속(다~ 팔아드립니다). 업체 소개는 여기와 마지막 버튼에만 둡니다.</p></aside></div>
+<div class="row"><div class="blk"><p>최근, 한 고객님께서 카톡으로 가방 사진 3장과 함께 매입 문의를 주셨어요.<br>가방의 정체는 바로 구찌 디오니소스 였는데요.</p></div><aside class="note"><span class="nk">구조</span><b>사연으로 시작</b><p>정보부터 말하면 독자가 빠져나갑니다. &#x27;최근, 한 고객님께서&#x27;로 실제 상담 장면을 열고, 가방 이름을 바로 밝혀 검색해서 들어온 분이 &#x27;내 얘기&#x27;인지 바로 알게 합니다.</p></aside></div>
+<div class="row"><div class="blk"><p>“이제 마지막입니다.“<br>금주 1주년 기념으로 술마시던 시절 물건들을 정리하는 중이신데,<br>와인잔 세트나 옷까지 다 버리셨는데 이 가방만 못버리고 계셨다더라고요.<br>아무래도 가격이 있다보니 아까워서 못 버리고, 모셔두기도 아깝잖아요.</p></div><aside class="note"><span class="nk">내용</span><b>팔려는 이유</b><p>&#x27;금주 1주년&#x27;은 이 글의 웃음 포인트를 미리 깔아 두는 설정입니다. &#x27;버리기엔 아깝고 모셔 두기도 아깝다&#x27;는 안 드는 명품을 가진 독자 대부분의 마음이에요.</p></aside></div>
+<div class="row"><div class="blk"><p>그때 인스타에서 김럭스를 보신게 생각나서 재미삼아 가격을 확인해보셨는데, 예상 가격이 60만~105만 원이 나왔대요.<br>생각보다 괜찮다 싶어서 카카오톡 문의까지 하게 되신거죠.</p></div><aside class="note"><span class="nk">내용</span><b>예상가 확인 → 문의</b><p>인스타에서 보고 홈페이지에서 예상가를 먼저 확인하는 흐름은 김럭스의 실제 유입 경로입니다. 60만~105만 원은 홈페이지 판매하기 화면에 나온 같은 모델의 예상 범위예요.</p></aside></div>
+<div class="row"><div class="blk"><p>“회식 날에만 들었고, 집에 오면 바로 더스트백에 넣어 뒀어요. 거의 새 거니까 105만 원 나오죠?”<br>사진을 보니 정말 상태가 좋아 보였어요.<br>그런데 사진은 앞면, 옆면, 버클장식 세 장뿐이었고 안쪽 사진은 없었어요.</p></div><aside class="note"><span class="nk">내용</span><b>고객 대사 = 독자의 기대</b><p>&#x27;거의 새 거니까 최고가 나오죠?&#x27;는 파는 사람 누구나 하는 기대라 고객 입으로 대신 말합니다. 안쪽 사진이 없다는 문장이 뒤의 반전을 예고합니다.</p></aside></div>
+<div class="row"><div class="blk"><p>저희는 안을 열어 보기 전에는 정확한 가격을 말씀드리기 어렵다고 말씀드리면서,<br>가방을 상자에 담아두시기만 하면 무료로 수거해드린다고 안내해 드렸어요.</p></div><aside class="note"><span class="nk">내용</span><b>사진만으로는 단정하지 않음</b><p>실물을 보기 전에는 금액을 확정하지 않는다는 태도로 신뢰를 줍니다. 상자에 담아 두면 무료로 수거해 간다는 건 사이트에 있는 실제 서비스입니다.</p></aside></div>
+<div class="row"><div class="blk"><h4>디오니소스의 정체??</h4></div><aside class="note"><span class="nk">구조</span><b>소제목은 독자의 궁금증</b><p>&#x27;디오니소스가 뭐지?&#x27;라는 궁금증을 소제목으로 세워 다음 이야기를 읽게 합니다.</p></aside></div>
+<div class="row"><div class="blk"><p>고객님께서는 이 가방에 대한 이야기도 함께 전해 주셨는데요.<br>이 가방은 5년 전에 승진 기념으로 사신 거래요.<br>회식이 있는 날이면 꼭 이 가방을 들고 나가실 만큼 애착 가방이었고요.</p></div><aside class="note"><span class="nk">내용</span><b>가방과 고객의 사연</b><p>승진 기념, 회식 날 애착 가방이라는 설정이 다음 문단의 반전을 웃기게 만듭니다.</p></aside></div>
+<div class="row"><div class="blk"><p>그런데 술을 끊고 처음 나간 금주 모임에서, 옆자리 분이 가방을 보더니 웃으면서 이렇게 말했대요.<br>&quot;디오니소스가 무슨 신인지 아세요? 술의 신이에요!”<br>5년 동안 술의 신을 어깨에 메고 회식에 다니셨던 거죠.</p></div><aside class="note"><span class="nk">구조</span><b>재미 포인트</b><p>술을 끊은 사람이 5년 동안 &#x27;술의 신&#x27;을 메고 다녔다는 반전. 이 글을 친구에게 얘기하고 싶게 만드는 장면이에요.</p></aside></div>
+<div class="row"><div class="blk"><p>“이젠 진짜 술과 이별을 할 시간이네요.”<br>이 말을 들으니 저까지 시원섭섭한 마음이 들더라고요.</p></div><aside class="note"><span class="nk">문장</span><b>작성자의 감정</b><p>&#x27;저까지 시원섭섭한 마음이 들더라고요&#x27;처럼 작성자가 함께 느끼는 문장을 넣어 광고문이 아니라 사람이 쓴 이야기로 읽히게 합니다.</p></aside></div>
+<div class="row"><div class="blk"><h4>두 개의 호랑이 머리, 버클 장식의 의미</h4></div><aside class="note"><span class="nk">구조</span><b>히스토리로 전환</b><p>가방 장식 이야기를 소제목으로 세워, 감정 과정과 브랜드 히스토리를 함께 보여 줍니다.</p></aside></div>
+<div class="row"><div class="blk"><p>이틀 뒤 가방이 도착했는데요.<br>도착하자마자 GLA 인증 감정사가 감정을 시작하고,<br>고객님께 김럭스 내 상품 화면에서 진행 상황을 바로 확인하실 수 있다고 말씀드리니<br>상태를 바로바로 확인할 수 있어 마음이 놓이셨다고 하더라고요.</p></div><aside class="note"><span class="nk">내용</span><b>감정 과정을 고객 감정으로</b><p>GLA 인증 감정사와 &#x27;내 상품&#x27; 화면 진행 확인은 사이트에 있는 실제 절차입니다. 절차를 나열하지 않고 &#x27;마음이 놓이셨다&#x27;는 고객 반응으로 전합니다.</p></aside></div>
+<div class="row"><div class="blk"><p>가방은 고객님 말씀대로 겉은 정말 깨끗했어요.<br>더스트백은 처음 받았을 때 접힌 자국까지 그대로 였고요.</p></div><aside class="note"><span class="nk">내용</span><b>겉 상태 확인</b><p>더스트백 접힌 자국까지 그대로라는 구체적 장면으로 &#x27;새것 같다&#x27;는 기대를 한 번 더 올립니다.</p></aside></div>
+<div class="row"><div class="blk"><blockquote><p>“제우스가 보내 준 호랑이를 타고 티그리스 강을 건넜다는 그리스 신화 속 신 디오니소스를 떠올리게 하는 독특한 디테일의 텍스처 타이거 헤드 클로저가 돋보이는 컬렉션 제품”</p><cite>출처: 구찌 공식 홈페이지 디오니소스 상품 설명</cite></blockquote></div><aside class="note"><span class="nk">내용</span><b>역사는 공식 출처 인용</b><p>버클 호랑이 장식의 의미를 구찌 공식 상품 설명에서 인용했습니다. 지어낸 이야기가 아니라는 신뢰와 &#x27;알고 보는 재미&#x27;를 함께 줍니다.</p></aside></div>
+<div class="row"><div class="blk"><p>구찌 디오니소스는 앞면 버클장식이 포인트인거 다들 아시죠?<br>이 컬렉션은 알레산드로 미켈레가 구찌를 맡은 2015년에 처음 나온 가방이기도 하고요.</p></div><aside class="note"><span class="nk">문장</span><b>독자에게 말 걸기</b><p>&#x27;다들 아시죠?&#x27;로 독자를 대화에 끌어들입니다. 미켈레 2015년은 출처를 확인한 내용입니다.</p></aside></div>
+<div class="row"><div class="blk"><p>받아본 가방을 살펴보니 버클 뿐만 아니라 손잡이와 모서리도 흠집이 거의 없어 새거 같았어요.<br>안쪽 태그 폰트와 공정 디테일까지 살펴서 정품인 것도 확인했고요.<br>여기까지만 보면 고객님 말씀처럼 105만 원에 가까웠어요.</p></div><aside class="note"><span class="nk">구조</span><b>기대를 최고치로</b><p>버클·손잡이·모서리까지 깨끗하고 정품 확인까지 마쳐서 &#x27;105만 원에 가깝다&#x27;까지 올려 둡니다. 다음 반전을 위한 준비예요.</p></aside></div>
+<div class="row"><div class="blk"><h4>여기까지 봐야 진짜 감정</h4></div><aside class="note"><span class="nk">구조</span><b>반전 예고</b><p>&#x27;여기까지 봐야 진짜 감정&#x27;은 겉만 보고 판단하면 안 된다는, 이 글이 하고 싶은 말입니다.</p></aside></div>
+<div class="row"><div class="blk"><p>그런데 가방을 열어 보니 안감에 붉은 얼룩이 있었어요.<br>심지어 손바닥 반만 한 와인 자국이었는데요.<br>이렇게 되면 105만원은 물건너 간 셈이죠.</p></div><aside class="note"><span class="nk">구조</span><b>반전: 안쪽 와인 자국</b><p>금주 설정과 &#x27;술의 신&#x27;이 와인 얼룩으로 다시 돌아옵니다. 앞에서 깐 설정을 회수하는 장면이에요.</p></aside></div>
+<div class="row"><div class="blk"><p>김럭스는 중고 가방 상태를 꼼꼼하게 정밀 감정 후에 N, S, SA, A 네 등급으로 나누는데요.<br>오늘 소개한 일화처럼 사용한 흔적이 눈에 보이면 A등급이에요.<br>겉이 아무리 깨끗해도 안쪽에 얼룩이 있으면 A가 될 수 있어요.</p></div><aside class="note"><span class="nk">내용</span><b>김럭스 등급 기준</b><p>N·S·SA·A 4등급은 사이트에 공개된 실제 기준입니다. &#x27;겉이 깨끗해도 안쪽 때문에 A가 될 수 있다&#x27;를 일화로 설명해 정보가 이야기 안에 들어가게 합니다.</p></aside></div>
+<div class="row"><div class="blk"><h4>그래서 최종 가격은???</h4></div><aside class="note"><span class="nk">구조</span><b>결말 궁금증</b><p>제목의 &#x27;도대체 얼마일까?&#x27;를 여기서 회수합니다. 물음표 세 개로 작성자 말투를 유지합니다.</p></aside></div>
+<div class="row"><div class="blk"><p>감정 결과는 70만원 이였어요.</p></div><aside class="note"><span class="nk">내용</span><b>숫자로 결론</b><p>결과를 금액 하나로 분명히 말합니다. (70만 원은 예시이며 담당자님이 실제 사례로 바꿉니다.)</p></aside></div>
+<div class="row"><div class="blk"><p>&quot;얼룩 하나로 그렇게 차이가 나요?&quot;<br>당연히 고객님은 이해하기 어렵다는 입장이셨는데요.<br>가방을 열 때마다 바로 보이는 얼룩이라 어쩔 수 없다고 말씀드렸어요.<br>얼룩만 없었다면 105만 원 이셨는데 저희도 아쉽더라고요.</p></div><aside class="note"><span class="nk">내용</span><b>아쉬움도 솔직하게</b><p>고객이 납득하기 어려워한 반응을 숨기지 않고, 이유(열 때마다 보이는 얼룩)를 짧게 설명합니다.</p></aside></div>
+<div class="row"><div class="blk"><p>고객님은 잠깐 말이 없으시다가 웃는 이모티콘을 보내셨어요.<br>혹시 안 팔면 비용이 드냐고도 물어보셨는데,<br>안 파셔도 수거·반송 배송비와 감정 비용은 받지 않고 가방은 저희가 택배로 다시 보내 드린다고 말씀드리니<br>고객님은 하루 정도 고민하시고 판매를 결정하셨어요.</p></div><aside class="note"><span class="nk">구조</span><b>&#x27;안 팔면요?&#x27;에 답하기</b><p>매입을 망설이는 독자의 가장 큰 걱정을 고객 질문으로 풉니다. 안 팔아도 수거·반송·감정 비용이 없다는 건 사이트 FAQ 기준입니다(약관과 표현 차이는 확인 중).</p></aside></div>
+<div class="row"><div class="blk"><p>판매하신 다는 말씀을 듣자마자 등록해 두신 계좌로 입금해 드렸어요.<br>입금까지 날짜를 세어보니 카톡으로 처음 문의하신 날부터 나흘 정도 걸렸네요.</p></div><aside class="note"><span class="nk">내용</span><b>입금과 걸린 시간</b><p>판매 결정 후 바로 입금, 첫 문의부터 나흘. 독자가 &#x27;나도 이 정도면 되겠다&#x27;고 가늠할 수 있게 합니다. (기간은 담당자님이 실제 기준으로 수정)</p></aside></div>
+<div class="row"><div class="blk"><p>집안에 명품이 있으신가요?<br>그렇다면 재미삼아 알아보는 것도 추천드려요!<br>혹시 알아요? 비싼 값에 팔릴지?</p></div><aside class="note"><span class="nk">구조</span><b>독자 마무리 3줄</b><p>고객 이야기를 독자 이야기로 돌립니다. ① 독자 호명 ② 부담 없이 알아보기 ③ &#x27;혹시 알아요?&#x27;로 가볍게 행동을 권합니다.</p></aside></div>
+<div class="row"><div class="blk"><div class="cta"><b>내 명품 가격이 궁금하다면?</b><span>지금 김럭스에서 보기</span></div></div><aside class="note"><span class="nk">구조</span><b>버튼은 끝에 한 번</b><p>본문 중간에는 매입 권유를 넣지 않고 마지막에만 둡니다. 다 읽은 사람이 바로 예상가 확인으로 넘어갑니다.</p></aside></div>
+   <p class="foot">* 국내 중고명품 거래량 1위: 집계 기준과 기간을 표기할 예정입니다.<br>60만~105만 원은 김럭스 홈페이지 판매하기 화면의 같은 모델 예상 범위입니다. 사진은 발행할 때 넣습니다. 고객 사례, 최종 금액(70만 원), 기간(나흘)은 예시이며 발행 전 담당자님 확인을 거칩니다.</p>
   </article>
  </div>
 </section>
 
 <section>
- <h2>다음 예상 주제<small>서비스가 골고루 돌아가도록 위탁, 매입, 수선, 판매 순으로 배치했습니다.</small></h2>
+ <h2>다음 예상 주제<small>당분간 매입 글만 발행합니다. 많이 찾는 브랜드를 고르되, 같은 브랜드가 연달아 나오지 않게 배치했습니다.</small></h2>
  <div class="topics">
   <div class="topic">
-   <span class="tag t-consign">위탁</span><span class="n">2회차 · 원고 초안 완료</span>
-   <h3>명품위탁판매 루이비통 스피디 25, 바로 팔까 맡길까?</h3>
+   <span class="tag t-buy">매입</span><span class="n">2회차</span>
+   <h3>루이비통 네버풀 매입, 이름처럼 정말 안 찰까?</h3>
    <ul>
-    <li>스피디는 사람들이 가장 많이 찾는 루이비통 가방 중 하나예요.</li>
-    <li>"바로 팔까, 맡길까"는 파는 분들이 실제로 제일 많이 고민하는 질문이에요.</li>
-    <li>오드리 헵번이 작은 사이즈를 부탁해서 25가 생겼다는 이야기로 끝까지 읽게 만듭니다.</li>
+    <li>네버풀은 루이비통에서 가장 많이 찾는 가방 중 하나라, 집에 하나쯤 있는 분이 많아요.</li>
+    <li>'절대 가득 차지 않는다'는 이름에 얽힌 이야기로 가볍게 시작합니다.</li>
+    <li>흔한 가방일수록 상태에 따라 매입가가 어떻게 갈리는지 보여 줍니다.</li>
    </ul>
-   <div class="vol">월 검색 루이비통스피디 <b>13,120</b> · 스피디25 <b>1,620</b> · 명품위탁판매 <b>430</b></div>
-   <div class="chk">확인 필요: 위탁 수수료, 예시 금액</div>
+   <div class="vol">월 검색 루이비통네버풀 <b>5,160</b> · 루이비통매입 <b>1,660</b></div>
+   <div class="chk">확인 필요: 이름 유래 출처, 예상가 범위</div>
   </div>
   <div class="topic">
    <span class="tag t-buy">매입</span><span class="n">3회차</span>
@@ -190,30 +194,30 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
     <li>에르메스는 비싸서 "얼마 받을 수 있을까"가 궁금한 분이 많아요.</li>
     <li>이름에 얽힌 이야기에서 시작해 매입 감정으로 이어지는 글이에요.</li>
    </ul>
-   <div class="vol">월 검색 에르메스매입 <b>1,710</b> · 켈리백 <b>1,410</b> · 에르메스켈리 <b>1,340</b></div>
-   <div class="chk">확인 필요: 역사 출처, 에르메스 매입 범위와 사례</div>
+   <div class="vol">월 검색 에르메스매입 <b>1,650</b> · 켈리백 <b>1,410</b> · 에르메스켈리 <b>1,340</b></div>
+   <div class="chk">확인 필요: 역사 출처, 에르메스 매입 사례</div>
   </div>
   <div class="topic">
-   <span class="tag t-repair">수선</span><span class="n">4회차</span>
-   <h3>명품가방수선 구찌 재키, 이름이 바뀐 가방 다시 살리기</h3>
+   <span class="tag t-buy">매입</span><span class="n">4회차</span>
+   <h3>명품시계매입 롤렉스, 오래된 시계도 값이 나올까?</h3>
    <ul>
-    <li>명품가방수선은 수선을 알아보는 분들이 가장 많이 쓰는 검색어 중 하나예요.</li>
-    <li>재키는 재클린 케네디가 즐겨 들면서 이름이 바뀐 가방이에요.</li>
-    <li>오래 들어 닳은 손잡이나 모서리가 수선 후 어떻게 바뀌는지 보여 줍니다.</li>
+    <li>명품 시계 매입은 가방 다음으로 많이 찾는 매입 검색어예요.</li>
+    <li>서랍 속 오래된 시계를 가진 분들의 "이것도 팔리나?" 질문에 답합니다.</li>
+    <li>가방 위주였던 글에 새로운 독자층을 더합니다.</li>
    </ul>
-   <div class="vol">월 검색 명품가방수선 <b>4,750</b> · 구찌재키 <b>710</b></div>
-   <div class="chk">확인 필요: 역사 출처, 실제 수선 사례와 비용</div>
+   <div class="vol">월 검색 명품시계매입 <b>2,460</b> · 롤렉스매입 <b>2,170</b></div>
+   <div class="chk">확인 필요: 시계 매입 범위, 실제 사례</div>
   </div>
   <div class="topic">
-   <span class="tag t-sell">판매</span><span class="n">5회차</span>
-   <h3>샤넬 보이백, '보이'는 누구 이름일까?</h3>
+   <span class="tag t-buy">매입</span><span class="n">5회차</span>
+   <h3>샤넬 보이백 매입, '보이'는 누구 이름일까?</h3>
    <ul>
-    <li>1회차 샤넬 클래식 글을 읽은 분이 이어서 볼 만한 샤넬 가방이에요.</li>
+    <li>샤넬은 매입 문의가 많은 브랜드라 샤넬 매입 검색도 꾸준해요.</li>
     <li>'보이'는 코코 샤넬이 사랑한 사람의 별명이라는 이야기가 있어요. 라이브 방송에서도 다뤘어요.</li>
-    <li>이야기로 시작해 김럭스에 있는 보이백 상품으로 이어집니다.</li>
+    <li>안 드는 보이백을 가진 분이 예상가를 확인하러 오게 만드는 글이에요.</li>
    </ul>
-   <div class="vol">월 검색 샤넬보이백 <b>4,360</b></div>
-   <div class="chk">확인 필요: 역사 출처, 보이백 재고</div>
+   <div class="vol">월 검색 샤넬보이백 <b>4,360</b> · 샤넬매입 <b>1,620</b> · 샤넬가방매입 <b>1,410</b></div>
+   <div class="chk">확인 필요: 역사 출처, 예상가 범위</div>
   </div>
  </div>
 </section>
@@ -223,9 +227,10 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
  <div class="ask">
   <ol>
    <li>"국내 중고명품 거래량 1위"의 집계 기준과 기간</li>
-   <li>원고 속 금액, 기간, 고객 사례를 실제 사례로 바꿀지 여부</li>
-   <li>위탁 수수료율과 위탁 전 수선 안내가 실제 운영과 맞는지</li>
-   <li>2~5회차 주제 순서와 우선 다룰 브랜드</li>
+   <li>원고 속 최종 금액, 기간, 고객 사례를 실제 사례로 바꿀지 여부</li>
+   <li>매입 확정 후 입금 시점(FAQ "바로 입금"과 약관 "다음 영업일"이 다름)</li>
+   <li>판매하지 않을 때 수거·반송·감정 비용이 정말 없는지(FAQ와 약관 표현이 다름)</li>
+   <li>명품 시계 매입 범위와 2~5회차 주제 순서</li>
   </ol>
  </div>
  <p class="src">검색량: 네이버 검색광고 키워드도구 월간 검색수(PC+모바일), 2026년 11월 5~6일 조회</p>
