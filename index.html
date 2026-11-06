@@ -150,6 +150,44 @@ h2 small{font-size:15px;color:var(--sub);font-weight:500;margin-left:auto}
  .row,.post .colhd{grid-template-columns:minmax(0,1fr) 300px;gap:28px}
  .bar nav{gap:16px}
 }
+@media (max-width:760px){
+ html{scroll-padding-top:100px}
+ .bar .in{padding:0 16px;height:auto;flex-wrap:wrap;gap:0}
+ .bar .logo{font-size:18px;padding:12px 0 4px;width:100%}
+ .bar nav{margin-left:0;gap:18px;overflow-x:auto;width:100%;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+ .bar nav::-webkit-scrollbar{display:none}
+ .bar nav a{padding:8px 0 10px;white-space:nowrap;font-size:13px}
+ .hero .in{padding:40px 16px 36px;gap:24px}
+ .hero h1{font-size:28px}
+ .hero dl{grid-template-columns:1fr;border-left:0;gap:12px}
+ .hero dl div{padding:0 0 0 12px;border-right:0;border-left:2px solid rgba(255,255,255,.2)}
+ .hero dd{font-size:16px}
+ .wrap{padding:0 16px 72px}
+ section{padding-top:56px}
+ h2{font-size:21px;gap:10px;flex-wrap:wrap}
+ h2 .no{font-size:22px}
+ h2 small{margin-left:0;width:100%;font-size:13px}
+ .card{padding:20px}
+ .pipe{grid-template-columns:1fr}
+ .arr{transform:rotate(90deg);height:36px}
+ .post .top{padding:12px 16px}
+ .post .colhd{display:none}
+ .post article{padding:20px 16px 32px}
+ .row{grid-template-columns:1fr;gap:0}
+ .note{margin:-6px 0 22px}
+ .post h3{font-size:21px;margin-bottom:20px}
+ .post p{font-size:16px;line-height:1.8}
+ .post .hook{font-size:16px;padding:18px 10px}
+ .post h4{font-size:18px}
+ .post blockquote{padding:16px 14px}
+ .post figure img{max-height:none}
+ .serp{gap:24px}
+ .hb div{grid-template-columns:88px 1fr 36px;font-size:13px}
+ .stat b{font-size:24px}
+ .topics,.nvg{grid-template-columns:1fr}
+ .cl li{grid-template-columns:24px 1fr;font-size:14px}
+ .cl .w{grid-column:2;text-align:left}
+}
 </style>
 </head>
 <body>
