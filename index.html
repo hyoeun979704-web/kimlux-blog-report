@@ -86,7 +86,7 @@ h2 small{display:block;font-size:14px;color:var(--sub);font-weight:500;margin-to
 .hide-notes .note{display:none}
 .hide-notes .row{grid-template-columns:1fr}
 .hide-notes.post.annot{max-width:640px}
-@media (max-width:900px){.row{grid-template-columns:1fr;gap:0}.note{margin:-8px 0 22px}}
+@media (max-width:900px){.row{grid-template-columns:minmax(0,1fr);gap:0}.post,.post *{overflow-wrap:anywhere;min-width:0}.note{margin:-8px 0 22px}}
 </style>
 </head>
 <body>
